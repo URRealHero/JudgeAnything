@@ -12,7 +12,7 @@ class BaseGoogleContentCreator:
     Will init benchmark data, result data, checklist data
     given an uniq_id, this will: 1. get the input query and input media files 2. get each model's response 3. construct content(Adding exp and checklist if c_flag is True) 4. get the result and save in result
     """
-    def __init__(self, client, entry, c_flag=False, light_flag=False):
+    def __init__(self, client, entry, c_flag=False, e_type="flash"):
         self.benchmark_dir = BASE_DIR
         self.benchmark = load_json(BENCHMARK_FILE)
         self.result_dir = RESULT_DIR
@@ -31,7 +31,7 @@ class BaseGoogleContentCreator:
         self.client = client
         self.models = []
         self.contents = None
-        self.evaluator = GOOGLE_MODELS["lite"] if light_flag else GOOGLE_MODELS["flash"]
+        self.evaluator = GOOGLE_MODELS[e_type]
         
     def get_result_entry(self, uniq_id):
         result_data = load_json(self.result)
@@ -70,8 +70,8 @@ class BaseGoogleContentCreator:
     
     
 class ScoringGoogleContentCreator(BaseGoogleContentCreator):
-    def __init__(self, client, entry, c_flag=False, light_flag=False):
-        super().__init__(client, entry, c_flag, light_flag)
+    def __init__(self, client, entry, c_flag=False, e_type="flash"):
+        super().__init__(client, entry, c_flag, e_type)
         
         
     def construct_content(self):
@@ -239,8 +239,8 @@ class ScoringGoogleContentCreator(BaseGoogleContentCreator):
 
 
 class PairingGoogleContentCreator(BaseGoogleContentCreator):
-    def __init__(self, client, entry, c_flag=False, light_flag=False):
-        super().__init__(client, entry, c_flag, light_flag)
+    def __init__(self, client, entry, c_flag=False, e_type="flash"):
+        super().__init__(client, entry, c_flag, e_type)
         
     def construct_content(self):
         """

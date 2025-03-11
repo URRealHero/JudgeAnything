@@ -34,6 +34,7 @@ class LocalPrompts(Enum):
     ASSISTANT = '<|assistant|>'
     END = '<|end|>'
     
+RUBRICS = ["relevance", "trustworthiness", "creativity", "clarity", "coherence", "completeness"]
 
 SCORERUBRIC2PROMPT = {
     "overall_score": OVERALL_SCORE_SCORING_PROMPT,
