@@ -1,14 +1,14 @@
 # JudgeAnything
-
+See our demo at [web](https://urrealhero.github.io/judgeanythingweb/)
 
 ## Todo
 - [x] ___Release the Benchmark and the Dataset___
-- [ ] ___Human preference data release___
 - [x] ___Gather code for auto-evaluation on our benchmark___
 - [ ] ___Release the OmniArena platform and general pair comparison code___
 
 ## Data
-We have released our benchmark and models responses in `https://huggingface.co/datasets/pudashi/JudgeAnything`, you should download them into `dataset/`
+We have released our benchmark and models responses in 
+[dataset](https://huggingface.co/datasets/pudashi/JudgeAnything), you should download them into `dataset/`
 
 
 ## Reproduction of auto-evaluation
