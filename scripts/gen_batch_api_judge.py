@@ -3,8 +3,6 @@ from utils.api import *
 from utils.utils import *
 from utils.config import *
 from google import genai
-from google.genai import types
-from PIL import Image
 from copy import deepcopy
 import asyncio
 import argparse

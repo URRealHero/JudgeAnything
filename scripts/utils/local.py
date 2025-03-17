@@ -27,7 +27,7 @@ class BaseLocalContentCreator:
         else:
             self.checklists = None
         self.models = []
-        self.contents = None # 这一步 直接生成content list(score/pair), 在外面与cache的sys_instruction一起生成content
+        self.contents = None  
         self.processor = processor
         self.evaluator = model
         self.generation_config = generation_config

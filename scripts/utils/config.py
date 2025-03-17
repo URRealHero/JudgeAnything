@@ -14,20 +14,20 @@ CHECKLIST_DIR = Path("dataset/Checklist")
 CHECKLIST_FILE = CHECKLIST_DIR / "checklist.json"
 FILE_STORAGE = BASE_DIR.parent / ".cache/file_storage.json"
 
-# 模型配置
+# API Config
 GOOGLE_MODELS = {
     "pro": "gemini-1.5-pro",
     "flash": "gemini-2.0-flash",
     "lite": "gemini-2.0-flash-lite-preview-02-05"
 }
 
-# 本地模型配置
+# Local Config
 LOCAL_MODEL_CONFIG = {
     "max_new_tokens": 1500,
     "temperature": 0.7
 }
 
-# 提示模板
+# Prompt template
 class LocalPrompts(Enum):
     SYSTEM = '<|system|>'
     USER = '<|user|>'

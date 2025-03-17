@@ -112,7 +112,6 @@ class ScoringGoogleContentCreator(BaseGoogleContentCreator):
         elif self.input_modality.lower() == "video" or self.input_modality.lower() == "audiovideo":
             media_files["input_media"].append(os.path.join(BASE_DIR, self.entry["video_path"]))
         
-        # 遍历result_entry, if isinstance(value,dict) -> 某个模型的回复{"type": , "content":} ; 这里采用先上传所有文件，最后构建contents
         i = 0
         for res_entry in self.result_entries:
             self.models.append(res_entry["model_name"])
@@ -157,7 +156,6 @@ class ScoringGoogleContentCreator(BaseGoogleContentCreator):
         self.contents = contents
         
     def generate_rubric_content(self):
-        # response = self.client.models.generate_content(model=self.cached_content.model, contents=(one model's response), config=types.GenerateContentConfig(cached_content=self.cached_content.name, temperature=0.7, response_mime_type="application/json", response_schema=scoring_one_forward))
         self.construct_content()
         results = {}
         for i,model_content in enumerate(self.contents):
@@ -198,7 +196,6 @@ class ScoringGoogleContentCreator(BaseGoogleContentCreator):
         return results
     
     def generate_overall_content(self):
-        # response = self.client.models.generate_content(model=self.cached_content.model, contents=(one model's response), config=types.GenerateContentConfig(cached_content=self.cached_content.name, temperature=0.7, response_mime_type="application/json", response_schema=scoring_one_forward))
         self.construct_content()
         results = {}
         for i,model_content in enumerate(self.contents):
@@ -281,7 +278,6 @@ class PairingGoogleContentCreator(BaseGoogleContentCreator):
             media_files["input_media"].append(os.path.join(BASE_DIR, self.entry["video_path"]))
         
         i=0
-        # 遍历result_entry, if isinstance(value,dict) -> 某个模型的回复{"type": , "content":} ; 这里采用先上传所有文件，最后构建contents
         for res_entry in self.result_entries:
             self.models.append(res_entry["model_name"])
             resp = res_entry["response"]
@@ -329,8 +325,7 @@ class PairingGoogleContentCreator(BaseGoogleContentCreator):
         self.contents = contents
         
     def generate_rubric_content(self):
-        # response = self.client.models.generate_content(model=self.cache_content.model, contents=(one model's response), config=types.GenerateContentConfig(cached_content=self.cache_content.name, temperature=0.7, response_mime_type="application/json", response_schema=pairing_one_forward))
-        # self.construct_content()
+        self.construct_content()
         results = {}
         
         for i,model_pair_content in enumerate(self.contents):
@@ -369,7 +364,6 @@ class PairingGoogleContentCreator(BaseGoogleContentCreator):
         return results
     
     def generate_overall_content(self):
-        # response = self.client.models.generate_content(model=self.cache_content.model, contents=(one model's response), config=types.GenerateContentConfig(cached_content=self.cache_content.name, temperature=0.7, response_mime_type="application/json", response_schema=pairing_one_forward))
         self.construct_content()
         results = {}
         
