@@ -36,3 +36,13 @@ To evaluate your own private generated data, transform the data into following f
     }
 ]
 ```
+
+## Citation
+```
+@article{pu2025judge,
+  title={Judge Anything: MLLM as a Judge Across Any Modality},
+  author={Pu, Shu and Wang, Yaochen and Chen, Dongping and Chen, Yuhang and Wang, Guohao and Qin, Qi and Zhang, Zhongyi and Zhang, Zhiyuan and Zhou, Zetong and Gong, Shuang and others},
+  journal={arXiv preprint arXiv:2503.17489},
+  year={2025}
+}
+```
