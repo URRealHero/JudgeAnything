@@ -151,7 +151,7 @@ class ScoreLocalContentCreator(BaseLocalContentCreator):
         for i, content in enumerate(self.contents):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
-            inputs = self.processor(text=input_str, images=visual_input, audio=audio_input, return_tensors="pt").to("cuda:0")
+            inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
             generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
@@ -175,7 +175,7 @@ class ScoreLocalContentCreator(BaseLocalContentCreator):
         for i, content in enumerate(self.contents):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
-            inputs = self.processor(text=input_str, images=visual_input, audio=audio_input, return_tensors="pt").to("cuda:0")
+            inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
             generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
@@ -289,7 +289,7 @@ class PairLocalContentCreator(BaseLocalContentCreator):
         for i, content in enumerate(self.contents):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
-            inputs = self.processor(text=input_str, images=visual_input, audio=audio_input, return_tensors="pt").to("cuda:0")
+            inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
             generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
@@ -312,7 +312,7 @@ class PairLocalContentCreator(BaseLocalContentCreator):
         for i, content in enumerate(self.contents):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
-            inputs = self.processor(text=input_str, images=visual_input, audio=audio_input, return_tensors="pt").to("cuda:0")
+            inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
             generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
