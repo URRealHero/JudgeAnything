@@ -37,8 +37,8 @@ class SystemPromptBuilder:
         """Local Model Specific"""
         local_prompts = LocalPrompts
         return {
-            "score": f"{local_prompts.SYSTEM.value} {cls.build_overall_scoring_prompt()}",
-            "pair": f"{local_prompts.SYSTEM.value} {cls.build_overall_pairing_prompt()}",
+            "score": f"{local_prompts.SYSTEM.value} {cls.build_overall_scoring_prompt()} {local_prompts.END.value}",
+            "pair": f"{local_prompts.SYSTEM.value} {cls.build_overall_pairing_prompt()} {local_prompts.END.value}",
         }
     
     @classmethod
@@ -46,6 +46,6 @@ class SystemPromptBuilder:
         """Local Model Specific"""
         local_prompts = LocalPrompts
         return {
-            "score": f"{local_prompts.SYSTEM.value} {cls.build_rubric_scoring_prompt()}",
-            "pair": f"{local_prompts.SYSTEM.value} {cls.build_rubric_pairing_prompt()}",
+            "score": f"{local_prompts.SYSTEM.value} {cls.build_rubric_scoring_prompt()} {local_prompts.END.value}",
+            "pair": f"{local_prompts.SYSTEM.value} {cls.build_rubric_pairing_prompt()} {local_prompts.END.value}",
         }

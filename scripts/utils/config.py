@@ -6,13 +6,19 @@ from .Pairing_Prompt import SYS_PROMPT as SYS_PAIRING_PROMPT, OVERALL_SCORE_PROM
 
 
 # 路径配置
-BASE_DIR = Path("dataset/MLLMRawBench_HF")
+ROOT_DIR = Path(__file__).resolve().parents[2]
+
+# Step 2: use ROOT_DIR to build all other paths
+BASE_DIR = ROOT_DIR / "dataset" / "MLLMRawBench_HF"
 BENCHMARK_FILE = BASE_DIR / "X2XBenchmark.json"
-RESULT_DIR = Path("dataset/RawResponse")
+
+RESULT_DIR = ROOT_DIR / "dataset" / "RawResponse"
 RESULT_FILE = RESULT_DIR / "X2XBenchmarkResponse.json"
-CHECKLIST_DIR = Path("dataset/Checklist")
+
+CHECKLIST_DIR = ROOT_DIR / "dataset" / "Checklist"
 CHECKLIST_FILE = CHECKLIST_DIR / "checklist.json"
-FILE_STORAGE = BASE_DIR.parent / ".cache/file_storage.json"
+
+FILE_STORAGE = BASE_DIR.parent / ".cache" / "file_storage.json"
 
 # API Config
 GOOGLE_MODELS = {
@@ -59,3 +65,4 @@ PAIRRUBRIC2PROMPT = {
         "completeness": COMPLETENESS_PAIRING_PROMPT
     }
 }
+

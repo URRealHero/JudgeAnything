@@ -37,7 +37,7 @@ class BaseLocalContentCreator:
 
         
     def get_result_entry(self, uniq_id):
-        result_data = load_json(self.result)
+        result_data = self.result
         results = []
         for entry in result_data:
             if entry["uniq_id"] == uniq_id:

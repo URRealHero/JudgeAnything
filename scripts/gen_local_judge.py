@@ -12,7 +12,7 @@ def main(model_name, p_flag, baseline, batch_size=1):
     benchmark = load_json(BENCHMARK_FILE)
     output_dir = f"{model_name}"
     
-    # 初始化模型和处理器
+
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -26,25 +26,25 @@ def main(model_name, p_flag, baseline, batch_size=1):
 
     os.makedirs(output_dir, exist_ok=True)
     
-    # 生成输出文件名
+
     output_file = os.path.join(output_dir, f"{'Pair' if p_flag else 'Score'}_{baseline}.json")
     
-    # 检查已存在数据
+
     if os.path.exists(output_file):
         output_data = load_json(output_file)
     else:
         output_data = []
     existing_ids = {entry["uniq_id"] for entry in output_data}
 
-    # Checklist标志
+
     c_flag = (baseline == "checklist")
 
-    # 主处理循环
+
     for i, entry in enumerate(benchmark):
         if entry["uniq_id"] in existing_ids:
             continue
 
-        # 初始化生成器
+
         if p_flag:
             generator = PairLocalContentCreator(
                 entry, processor, model, generation_config, c_flag)
@@ -53,7 +53,6 @@ def main(model_name, p_flag, baseline, batch_size=1):
                 entry, processor, model, generation_config, c_flag)
 
         try:
-            # 根据baseline选择生成方法
             if baseline == "overall":
                 result = generator.generate_overall_content()
             else:
@@ -62,7 +61,6 @@ def main(model_name, p_flag, baseline, batch_size=1):
             print(f"Error processing entry {i+1}: {str(e)}")
             continue
 
-        # 处理结果
         batch_results = []
         if p_flag:
             for model_pair, response in result.items():
@@ -83,7 +81,6 @@ def main(model_name, p_flag, baseline, batch_size=1):
                 }
                 batch_results.append(ent)
 
-        # 保存结果
         output_data.extend(batch_results)
         save_json(output_data, output_file)
         print(f"Saved data after processing entry {i+1}/{len(benchmark)}")
