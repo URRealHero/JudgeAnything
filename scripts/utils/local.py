@@ -152,7 +152,7 @@ class ScoreLocalContentCreator(BaseLocalContentCreator):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
             inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
-            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
+            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 200, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
             response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
@@ -176,7 +176,7 @@ class ScoreLocalContentCreator(BaseLocalContentCreator):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
             inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
-            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
+            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 200, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
             response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
@@ -290,7 +290,7 @@ class PairLocalContentCreator(BaseLocalContentCreator):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
             inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
-            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
+            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 200, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
             response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
@@ -313,7 +313,7 @@ class PairLocalContentCreator(BaseLocalContentCreator):
             input_str, visual_input, audio_input = content
             input_str = self.sys_p + input_str
             inputs = self.processor(text=input_str, images=visual_input, audios=audio_input, return_tensors="pt").to("cuda:0")
-            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 1500, generation_config=self.generation_config)
+            generate_ids = self.evaluator.generate(**inputs, max_new_tokens = 200, generation_config=self.generation_config)
             generate_ids = generate_ids[:, inputs["input_ids"].shape[1]:]
             
             response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]

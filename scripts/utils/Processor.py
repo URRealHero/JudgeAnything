@@ -6,11 +6,13 @@ import numpy as np
 import warnings
 
 class BaseProcessor:
+    """媒体处理器基类"""
     def process(self, file_paths):
         raise NotImplementedError
 
 class AudioProcessor(BaseProcessor):
     def process(self, audio_files):
+        """处理音频文件列表"""
         processed = []
         for file in audio_files:
             data, sr = sf.read(str(file))
@@ -19,18 +21,19 @@ class AudioProcessor(BaseProcessor):
 
 class ImageProcessor(BaseProcessor):
     def process(self, image_files):
+        """处理图像文件列表"""
         processed = []
         for file in image_files:
             with Image.open(str(file)) as img:
-                processed.append(img.copy())
-                img.close()
+                processed.append(img.convert("RGB").copy())
         return processed
 
 class VideoProcessor(BaseProcessor):
-    def __init__(self, target_fps=16):
+    def __init__(self, target_fps=1):
         self.target_fps = target_fps
 
     def process(self, video_files):
+        """处理视频文件列表"""
         processed = []
         for file in video_files:
             frames = self._extract_frames(str(file))
@@ -38,6 +41,7 @@ class VideoProcessor(BaseProcessor):
         return processed
 
     def _extract_frames(self, video_path):
+        """从视频中提取帧"""
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
             return []
