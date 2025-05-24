@@ -1,10 +1,10 @@
 import os
 import json
 from copy import deepcopy
-from .utils import *
-from .config import *
-from .schemas import *
-from prompt_builder import SystemPromptBuilder
+from ..utils import *
+from ..config import *
+from ..schemas import *
+from ..prompt_builder import SystemPromptBuilder
 
 class BaseGoogleContentCreator:
     """

@@ -1,5 +1,5 @@
 import os
-from utils.local import *
+from utils.Phi4mm.local import *
 from utils.utils import *
 from utils.config import *
 from copy import deepcopy
@@ -11,7 +11,8 @@ import gc
 def main(model_name, p_flag, baseline, batch_size=1):
     benchmark = load_json(BENCHMARK_FILE)
     output_dir = f"{model_name}"
-    
+    # you may need to set to local path here, "transformers >= 4.48" seems to have some issues
+    # model_path = "$HF_HOME/hub/models--microsoft--Phi-4-multimodal-instruct/snapshots/xxxxxx"
 
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(
@@ -19,7 +20,7 @@ def main(model_name, p_flag, baseline, batch_size=1):
         device_map="cuda",
         torch_dtype="auto",
         trust_remote_code=True,
-        attn_implementation='flash_attention_2',
+        attn_implementation='flash_attention_2', # or 'eager'
     ).cuda()
     generation_config = GenerationConfig.from_pretrained(model_name)
     generation_config.temperature = 0.7

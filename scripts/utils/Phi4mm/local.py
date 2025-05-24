@@ -1,9 +1,9 @@
 import os
 import json
 from copy import deepcopy
-from .utils import *
-from .config import *
-from .prompt_builder import SystemPromptBuilder
+from ..utils import *
+from ..config import *
+from ..prompt_builder import SystemPromptBuilder
 from .Processor import ImageProcessor, AudioProcessor, VideoProcessor
 from transformers import AutoProcessor, AutoModelForCausalLM, GenerationConfig
 
