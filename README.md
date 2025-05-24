@@ -4,7 +4,8 @@ See our demo at [web](https://urrealhero.github.io/judgeanythingweb/)
 ## Todo
 - [x] ___Release the Benchmark and the Dataset___
 - [x] ___Gather code for auto-evaluation on our benchmark___
-- [ ] ___Release the OmniArena platform and general pair comparison code___
+- [x] ___Release the human-annotated ground truth___
+- [ ] ___Construct the OmniArena platform___
 
 ## Data
 We have released our benchmark and models responses in 
@@ -15,9 +16,12 @@ We have released our benchmark and models responses in
 You can use scripts under `scripts/` to re-run the evaluation on existing data. 
 
 ### API
-We now provide the reproduction code for `Gemini-1.5-pro`, `Gemini-2.0-flash`, `Gemini-2.0-flash-lite`.
+We now provide the judging code for `Gemini-1.5-pro`, `Gemini-2.0-flash`, `Gemini-2.0-flash-lite`.
+
 
 ### Local 
+We now provide the judging code for `Phi4Multimodal`
+We will provide the judging code for `Qwen2.5 Omni` and `InternOmni-7B`
 We also provides an extensive huggingface-support interface to evaluate, the prompt template is `Phi4v-multimodal`, you can modify the local special token template in `scripts/utils/config.py` or modify the procedure of building local prompt template in `scripts/utils/prompt_builder.py`.
 
 ## General Evaluation
