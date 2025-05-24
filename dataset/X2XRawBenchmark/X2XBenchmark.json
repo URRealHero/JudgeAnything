@@ -12,7 +12,7 @@
     {
         "uniq_id": "d9dd9e01",
         "task_name": "Text2Text",
-        "question": "code a pinescript v5 script for above\n\nStructural Pivots Method (SPM) \n\nSmall Pivots\n\u2022 In a rally, when we get 2 lower closes and lower lows, we get to mark Small Pivot High\n(sph)\n\u2022 In a decline, when we get 2 higher closes and higher highs, we get to mark Small Pivot\nLow (spl)\n_________________________________________________________________________________________\nStructural Pivots Method (SPM) - Small Pivots\n\n\uf0d8 Concept of anchor/reference bar\n\n\uf0d8 Importance of creating rules objectively to mark the pivots\n\n\uf0d8 If rules are adhered, all will mark the same pivots\n______________________________________________________________________________________________\nSmall Pivots \u2013 Rules for marking\n\na. Small Pivot High :-\n\n\u2022 To mark sph, we need two lower lows\nand two lower closes compared to\nanchor bar\n\u2022 SPH is the highest point in between 2\nSPLs\n\u2022 SPH alternates with SPL\n\nb. Small Pivot Low :-\n\n\u2022 To mark spl, we need two higher\nhighs and two higher closes\ncompared to the anchor bar\n\u2022 SPL is the lowest point between 2\nSPHs\n\u2022 SPL and SPH alternate with each\nother, SPL cannot follow another SPL\n\n-----------------------------------------------------------------------------------------------------------\nCommon Rules\n\n\u2022 Bar 1 & Bar 2 for marking small pivots does\nnot have to be consecutive bars UNTIL WE\nGET TO MARK THE SMALL PIVOT (HIGH OR\nLOW)\n\u2022 Anchor Bar or a reference bar is taken as a\nstarting point to compare high/lows\n\u2022 Only Bar2 of prev marked pivot can \u2018start\u2019\nacting as the anchor bar to mark the next\npivot\n\u2022 Recently marked small pivot is temporary. It\nbecomes permanent only after marking the\nsubsequent small pivot.\n\n---------------------------------------------------------------------------------------------------------\nSPM Large Pivots \u2013 Rules for marking\n\u2022 To mark LPH, we need to break the previously marked spl(temp spl break is enough)\n\n\u2022 To mark LPL, we need to break the previously marked sph(temp sph break is enough)\n\n\u2022 LPH and LPL alternates...\n\n\u2022 To mark LPH, we go back to see all the sphs (that were marked after the last LPL \u2013 including\nhighs) and mark the highest sph as LPH\n\n\u2022 To mark LPL, we go back to see all the spls (that were marked after the last LPH \u2013 including\nlows) and mark the lowest spl as LPL\n\n\u2022 Once marked, Large pivots are permanent (no temp pivot concept like spl/sph)\n\n_____________________________________________________________________________________________\nbuy when : \uf0d8 Higher high and higher low LPs \n\nsell when : \uf0d8 Lower high and lower low LPs \n\n"
+        "question": "code a pinescript v5 script for above\n\nStructural Pivots Method (SPM) \n\nSmall Pivots\n• In a rally, when we get 2 lower closes and lower lows, we get to mark Small Pivot High\n(sph)\n• In a decline, when we get 2 higher closes and higher highs, we get to mark Small Pivot\nLow (spl)\n_________________________________________________________________________________________\nStructural Pivots Method (SPM) - Small Pivots\n\n Concept of anchor/reference bar\n\n Importance of creating rules objectively to mark the pivots\n\n If rules are adhered, all will mark the same pivots\n______________________________________________________________________________________________\nSmall Pivots – Rules for marking\n\na. Small Pivot High :-\n\n• To mark sph, we need two lower lows\nand two lower closes compared to\nanchor bar\n• SPH is the highest point in between 2\nSPLs\n• SPH alternates with SPL\n\nb. Small Pivot Low :-\n\n• To mark spl, we need two higher\nhighs and two higher closes\ncompared to the anchor bar\n• SPL is the lowest point between 2\nSPHs\n• SPL and SPH alternate with each\nother, SPL cannot follow another SPL\n\n-----------------------------------------------------------------------------------------------------------\nCommon Rules\n\n• Bar 1 & Bar 2 for marking small pivots does\nnot have to be consecutive bars UNTIL WE\nGET TO MARK THE SMALL PIVOT (HIGH OR\nLOW)\n• Anchor Bar or a reference bar is taken as a\nstarting point to compare high/lows\n• Only Bar2 of prev marked pivot can ‘start’\nacting as the anchor bar to mark the next\npivot\n• Recently marked small pivot is temporary. It\nbecomes permanent only after marking the\nsubsequent small pivot.\n\n---------------------------------------------------------------------------------------------------------\nSPM Large Pivots – Rules for marking\n• To mark LPH, we need to break the previously marked spl(temp spl break is enough)\n\n• To mark LPL, we need to break the previously marked sph(temp sph break is enough)\n\n• LPH and LPL alternates...\n\n• To mark LPH, we go back to see all the sphs (that were marked after the last LPL – including\nhighs) and mark the highest sph as LPH\n\n• To mark LPL, we go back to see all the spls (that were marked after the last LPH – including\nlows) and mark the lowest spl as LPL\n\n• Once marked, Large pivots are permanent (no temp pivot concept like spl/sph)\n\n_____________________________________________________________________________________________\nbuy when :  Higher high and higher low LPs \n\nsell when :  Lower high and lower low LPs \n\n"
     },
     {
         "uniq_id": "d5ebba1d",
@@ -37,7 +37,7 @@
     {
         "uniq_id": "778e6ce8",
         "task_name": "Text2Text",
-        "question": "Complete the following Verilog code to implement a digital system that counts the number of bit\ntransitions. This system can load an input data (10-bit) value when the Load input is asserted,\nand then compute the result on the positive edge of the input clock.\n\nmodule Transition_Calculator(clk, load, clear, data, count)\ninput clk, load, clear;\ninput [9:0] data;\noutput reg [4:0] count;\n\nYour design should include the following pins:\n1. CLK: (positive edge trigger input clock)\n2. Load: Synchronous Active High Load signals\n3. Clear: Asynchronous Active Low Input (Clear the output)\n4. Count: The output result which represents the number transitions in the loaded data.\nNotes:\n\u2022 Use behavioral description\n\u2022 The calculation should be synchronous with the clock when the Load signal is equal to 1.\n(the number of transitions should be calculated in a single clock cycle at the rising edge)"
+        "question": "Complete the following Verilog code to implement a digital system that counts the number of bit\ntransitions. This system can load an input data (10-bit) value when the Load input is asserted,\nand then compute the result on the positive edge of the input clock.\n\nmodule Transition_Calculator(clk, load, clear, data, count)\ninput clk, load, clear;\ninput [9:0] data;\noutput reg [4:0] count;\n\nYour design should include the following pins:\n1. CLK: (positive edge trigger input clock)\n2. Load: Synchronous Active High Load signals\n3. Clear: Asynchronous Active Low Input (Clear the output)\n4. Count: The output result which represents the number transitions in the loaded data.\nNotes:\n• Use behavioral description\n• The calculation should be synchronous with the clock when the Load signal is equal to 1.\n(the number of transitions should be calculated in a single clock cycle at the rising edge)"
     },
     {
         "uniq_id": "8a14f485",
@@ -57,7 +57,7 @@
     {
         "uniq_id": "5eeb5c5b",
         "task_name": "Text2Text",
-        "question": "Write a long, detailed first person story getting a Karen hairstyle and choosing the Kate Gosselin version of the haircut with a unique twist, intriguing characters, and gripping emotional stakes. Make sure to have plenty of realistic dialogue, and be sure to show don\u2019t tell, and use deep point of view. Write in a very slow pace, building the story with in-depth character development and world building."
+        "question": "Write a long, detailed first person story getting a Karen hairstyle and choosing the Kate Gosselin version of the haircut with a unique twist, intriguing characters, and gripping emotional stakes. Make sure to have plenty of realistic dialogue, and be sure to show don’t tell, and use deep point of view. Write in a very slow pace, building the story with in-depth character development and world building."
     },
     {
         "uniq_id": "02234ecf",
@@ -112,7 +112,7 @@
     {
         "uniq_id": "57fef952",
         "task_name": "Text2Text",
-        "question": "A 91 year old patient who had a severe stroke a couple of weeks ago has developed severe pneumonia and is being treated with iv antibiotics. She has been on iv therapy for 2 weeks. She has had a ng feeding tube for about a week. She has some ic pressure, so she\u2019s limited to a 30 degree angle currently. She would like to try some vitamin d. Is this a good idea? What are the risks and benefits?"
+        "question": "A 91 year old patient who had a severe stroke a couple of weeks ago has developed severe pneumonia and is being treated with iv antibiotics. She has been on iv therapy for 2 weeks. She has had a ng feeding tube for about a week. She has some ic pressure, so she’s limited to a 30 degree angle currently. She would like to try some vitamin d. Is this a good idea? What are the risks and benefits?"
     },
     {
         "uniq_id": "50983dcb",
@@ -137,12 +137,12 @@
     {
         "uniq_id": "755409b2",
         "task_name": "Text2Text",
-        "question": "Prompt\n\nWrite a compare and contrast essay as an example. \nImagine that your local library has invited members of your community to submit proposals for a fundraiser. You are the student representative on the committee to choose the best proposal. Read the two proposals below, paying close attention to their similarities and differences. Consider whether or not each proposal is logistically feasible, which fundraiser will most appeal to members of your community, and which fundraiser will likely raise more money. Which proposal do you think the committee should choose? Write an essay in which you make a case for your choice. Support your argument with references to specific details in each proposal.\n\nProposal 1\n\nThe best way to get people invested in the library is to show them the joy of reading. For that reason, the library should hold a book sale. People could donate books that they no longer want, and the librarians could find books that the library no longer needs. Volunteers will need to sort the books into categories and arrange them in an inviting way, like at a bookstore. Books should be inexpensive, so people buy more\u2014maybe fifty cents for paperbacks and two dollars for hardcover books. A book sale would appeal to people of all ages, from little kids to the elderly. There should also be a table where people can sign up for library cards. That way, if visitors don\u2019t find any books they want at the sale, they can come back to the library.\n\nProposal 2\n\nA great way to make money for the library would be by holding a car wash. The softball team at my school raised over $400 dollars at their car wash last year! The car wash could be held in the library parking lot on a Saturday morning. You could ask local high school students to volunteer to wash the cars. That would be a great way to get students involved with the library. It takes two or three volunteers to wash a car quickly, so you would need at least ten volunteers. You could charge around ten dollars per car. Even people who aren\u2019t very interested in reading like to have a clean car, so you would get a lot of people to stop by who might not otherwise come to a library fundraiser."
+        "question": "Prompt\n\nWrite a compare and contrast essay as an example. \nImagine that your local library has invited members of your community to submit proposals for a fundraiser. You are the student representative on the committee to choose the best proposal. Read the two proposals below, paying close attention to their similarities and differences. Consider whether or not each proposal is logistically feasible, which fundraiser will most appeal to members of your community, and which fundraiser will likely raise more money. Which proposal do you think the committee should choose? Write an essay in which you make a case for your choice. Support your argument with references to specific details in each proposal.\n\nProposal 1\n\nThe best way to get people invested in the library is to show them the joy of reading. For that reason, the library should hold a book sale. People could donate books that they no longer want, and the librarians could find books that the library no longer needs. Volunteers will need to sort the books into categories and arrange them in an inviting way, like at a bookstore. Books should be inexpensive, so people buy more—maybe fifty cents for paperbacks and two dollars for hardcover books. A book sale would appeal to people of all ages, from little kids to the elderly. There should also be a table where people can sign up for library cards. That way, if visitors don’t find any books they want at the sale, they can come back to the library.\n\nProposal 2\n\nA great way to make money for the library would be by holding a car wash. The softball team at my school raised over $400 dollars at their car wash last year! The car wash could be held in the library parking lot on a Saturday morning. You could ask local high school students to volunteer to wash the cars. That would be a great way to get students involved with the library. It takes two or three volunteers to wash a car quickly, so you would need at least ten volunteers. You could charge around ten dollars per car. Even people who aren’t very interested in reading like to have a clean car, so you would get a lot of people to stop by who might not otherwise come to a library fundraiser."
     },
     {
         "uniq_id": "be6a4515",
         "task_name": "Text2Text",
-        "question": "Check your knowledge of politics-related terminology by matching the following:\n\na) \u0432\u0435\u043b\u0438\u043a\u0430 \u043f\u043e\u043b\u0456\u0442\u0438\u043a\u0430 1) election manifesto\nb) \u0434\u0435\u043f\u0443\u0442\u0430\u0442 \u043c\u0456\u0441\u044c\u043a\u043e\u0457 \u0440\u0430\u0434\u0438 2) public opinion\nc) \u0447\u0438\u043d\u043d\u0430 \u043a\u043e\u043d\u0441\u0442\u0438\u0442\u0443\u0446\u0456\u044f 3) parliamentary majority\nd) \u0441\u0443\u0441\u043f\u0456\u043b\u044c\u043d\u0430 \u0434\u0443\u043c\u043a\u0430 4) valid constitution\ne) \u043f\u0430\u0440\u043b\u0430\u043c\u0435\u043d\u0442\u0441\u044c\u043a\u0430 \u0431\u0456\u043b\u044c\u0448\u0456\u0441\u0442\u044c 5) parliamentary alliances\nf) \u043f\u0430\u0440\u043b\u0430\u043c\u0435\u043d\u0442\u0441\u044c\u043a\u0430 \u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f 6) amendments to the constitution\ng) \u0432\u0438\u0431\u043e\u0440\u0447\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0430 7) opposition parties\nh) \u0431\u043b\u043e\u043a \u043f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0438\u0445 \u043f\u0430\u0440\u0442\u0456\u0439 8) election process\ni) \u0437\u043c\u0456\u043d\u0438 \u0442\u0430 \u0434\u043e\u043f\u043e\u0432\u043d\u0435\u043d\u043d\u044f \u0434\u043e 9) town councillor (Ang/oE)\n\u043a\u043e\u043d\u0441\u0442\u0438\u0442\u0443\u0446\u0456\u0457 10) mainstream politics\nj) \u0432\u0438\u0431\u043e\u0440\u0447\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 11) candidate elections\nk) \u043f\u0440\u044f\u043c\u0456 \u0432\u0438\u0431\u043e\u0440\u0438 12) supremacy of law\n1) \u043f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0456 \u0433\u0430\u0441\u043b\u0430 13) political slogans\nm) \u0440\u043e\u0437\u043f\u0443\u0441\u0442\u0438\u0442\u0438 \u043f\u0430\u0440\u043b\u0430\u043c\u0435\u043d\u0442 14) compliance with the\nn) \u043f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0438\u0439 \u0443\u0441\u0442\u0440\u0456\u0439 constitution\no) \u0432\u0435\u0440\u0445\u043e\u0432\u0435\u043d\u0441\u0442\u0432\u043e \u043f\u0440\u0430\u0432\u0430 15) dissolve parliament\nP) \u0430\u043f\u0430\u0440\u0430\u0442 \u043f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0430 16) political make-up\nq) \u043f\u0440\u0430\u0432\u043b\u044f\u0447\u0430 \u043a\u043e\u0430\u043b\u0456\u0446\u0456\u044f 17) to climb on the bandwagon\nr) \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0456\u0441\u0442\u044c \u043a\u043e\u043d\u0441\u0442\u0438\u0442\u0443\u0446\u0456\u0457 (fig-)\ns) \u043f\u0435\u0440\u0435\u0434\u0432\u0438\u0431\u043e\u0440\u0447\u0430 \u0430\u0433\u0456\u0442\u0430\u0446\u0456\u044f 18) presidential administration\nt) \u043f\u043e\u043b\u0456\u0442\u043e\u043b\u043e\u0433\u0456\u044f 19) election campaigning/\nU) \u0447\u043b\u0435\u043d \u043f\u0430\u0440\u043b\u0430\u043c\u0435\u043d\u0442\u0443 \u0431\u0435\u0437 canvassing\n\u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u0438\u0445 \u043e\u0431\u043e\u0432\u2019\u044f\u0437\u043a\u0456\u0432 20) vote-catcher\nV) \u0433\u043e\u043b\u043e\u0441\u0443\u0432\u0430\u043d\u043d\u044f 21) ruling coalition\nw) \u043e\u0441\u043d\u043e\u0432\u043d\u0435 \u043f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0435 \u0433\u0430\u0441\u043b\u043e 22) parliamentary faction\nX) \u0432\u0438\u043b\u0456\u0437\u0442\u0438 \u043d\u0430 \u0430\u0433\u0456\u0442\u0430\u0446\u0456\u0439\u043d\u0443 23) political science\n\u0442\u0440\u0438\u0431\u0443\u043d\u0443 (\u043f\u0435\u0440.) 24) a back-bencher\n\u0423) \u043f\u0430\u0440\u043b\u0430\u043c\u0435\u043d\u0442\u0441\u044c\u043a\u0430 \u0444\u0440\u0430\u043a\u0446\u0456\u044f 25) a ballot\n"
+        "question": "Check your knowledge of politics-related terminology by matching the following:\n\na) велика політика 1) election manifesto\nb) депутат міської ради 2) public opinion\nc) чинна конституція 3) parliamentary majority\nd) суспільна думка 4) valid constitution\ne) парламентська більшість 5) parliamentary alliances\nf) парламентська опозиція 6) amendments to the constitution\ng) виборча програма 7) opposition parties\nh) блок політичних партій 8) election process\ni) зміни та доповнення до 9) town councillor (Ang/oE)\nконституції 10) mainstream politics\nj) виборча система 11) candidate elections\nk) прямі вибори 12) supremacy of law\n1) політичні гасла 13) political slogans\nm) розпустити парламент 14) compliance with the\nn) політичний устрій constitution\no) верховенство права 15) dissolve parliament\nP) апарат президента 16) political make-up\nq) правляча коаліція 17) to climb on the bandwagon\nr) відповідність конституції (fig-)\ns) передвиборча агітація 18) presidential administration\nt) політологія 19) election campaigning/\nU) член парламенту без canvassing\nконкретних обов’язків 20) vote-catcher\nV) голосування 21) ruling coalition\nw) основне політичне гасло 22) parliamentary faction\nX) вилізти на агітаційну 23) political science\nтрибуну (пер.) 24) a back-bencher\nУ) парламентська фракція 25) a ballot\n"
     },
     {
         "uniq_id": "779121aa",
@@ -167,17 +167,17 @@
     {
         "uniq_id": "1118d367",
         "task_name": "Text2Text",
-        "question": "We are a software company that provides an appointment booking platform for banks, financial institutions and credit unions. We are building buyer personas for a new market, Wealth Management, that we would like to target. We would like five bullet points for each of the following categories to build their buyer personas. 1. Roles and responsibilities, 2. Challenges they face in their role, 3. How they\u2019re evaluated in their role, 4. How they evaluate new technology, 5. Why they begin searching for a solution, 6. Where they go for information, 7. Typical objections. We need these bullet points for the following personas: Financial Advisors, Portfolio Managers, Financial Managers, and Product managers.\n\nFor context, here are the bullet points we've built for another Decision maker. You can take a look at the below as an example when you build the new bullet points for our new newt \n\nRoles and responsibilities: \n-Manage the performance of all branch, facilities and contact center staff \n-Develop, implement and improve branch processes and procedures to drive efficiencies\n-Create a sales culture that promotes cross-selling and upselling through sales processes and staff coaching \n-Ensure compliance with federal, state regulations and credit union policies \n\nChallenges they face in their role:\n-Finding ways to increase the capacity and productivity of their staff \n-Measuring and understanding their branch traffic flow \n-Reducing branch wait times that can lead to poor experience and lost revenue \n-Staffing shortages, hiring new staff in competitive market \n-Manual processes for staff to manage their schedule, lobby traffic are inefficient\n\nHow they\u2019re evaluated in their role: \n-Growth in assets (retention, acquisition, expansion with existing customers) \n-Sales performance (conversion rates, share of wallet) \n-NPS \n-Employee turnover \n-Operational savings/efficiencies \n-Compliance \n\nHow they evaluate new technology: \n-Ease of use for their staff and members\n-Ability to address multiple needs with a single solution \n-Integration with their current tech stack \n-Compliance and security   \n-Feedback from peers in the industry \n-Return on investment (how will it help them meet their growth goals)\n\nWhy they begin searching for a solution:\n-Staffing shortages, capacity challenges \n-Aggressive growth targets, need self-serve options to compete with big banks  \n-Digital transformation mandates across the credit union \n-Want a better understanding of their branch traffic \n\nWhere they go for information: \n-Peer network \n-Industry associations (CUNA) \n-Online search \n\nTypical objections:\n-Change management with their staff \n-Implementation timelines and IT resources required \n-Integrations with their current tech stack \n-Compliance and security requirements \n-Status quo, no strong desire to change "
+        "question": "We are a software company that provides an appointment booking platform for banks, financial institutions and credit unions. We are building buyer personas for a new market, Wealth Management, that we would like to target. We would like five bullet points for each of the following categories to build their buyer personas. 1. Roles and responsibilities, 2. Challenges they face in their role, 3. How they’re evaluated in their role, 4. How they evaluate new technology, 5. Why they begin searching for a solution, 6. Where they go for information, 7. Typical objections. We need these bullet points for the following personas: Financial Advisors, Portfolio Managers, Financial Managers, and Product managers.\n\nFor context, here are the bullet points we've built for another Decision maker. You can take a look at the below as an example when you build the new bullet points for our new newt \n\nRoles and responsibilities: \n-Manage the performance of all branch, facilities and contact center staff \n-Develop, implement and improve branch processes and procedures to drive efficiencies\n-Create a sales culture that promotes cross-selling and upselling through sales processes and staff coaching \n-Ensure compliance with federal, state regulations and credit union policies \n\nChallenges they face in their role:\n-Finding ways to increase the capacity and productivity of their staff \n-Measuring and understanding their branch traffic flow \n-Reducing branch wait times that can lead to poor experience and lost revenue \n-Staffing shortages, hiring new staff in competitive market \n-Manual processes for staff to manage their schedule, lobby traffic are inefficient\n\nHow they’re evaluated in their role: \n-Growth in assets (retention, acquisition, expansion with existing customers) \n-Sales performance (conversion rates, share of wallet) \n-NPS \n-Employee turnover \n-Operational savings/efficiencies \n-Compliance \n\nHow they evaluate new technology: \n-Ease of use for their staff and members\n-Ability to address multiple needs with a single solution \n-Integration with their current tech stack \n-Compliance and security   \n-Feedback from peers in the industry \n-Return on investment (how will it help them meet their growth goals)\n\nWhy they begin searching for a solution:\n-Staffing shortages, capacity challenges \n-Aggressive growth targets, need self-serve options to compete with big banks  \n-Digital transformation mandates across the credit union \n-Want a better understanding of their branch traffic \n\nWhere they go for information: \n-Peer network \n-Industry associations (CUNA) \n-Online search \n\nTypical objections:\n-Change management with their staff \n-Implementation timelines and IT resources required \n-Integrations with their current tech stack \n-Compliance and security requirements \n-Status quo, no strong desire to change "
     },
     {
         "uniq_id": "9f8ec424",
         "task_name": "Text2Text",
-        "question": "Hi. Act as an executive trainer specialized in Patient Relationship Management in Dental Clinics. Elaborate a detailed training program in order to prepare an executive to deal with everything that is involved in the patient\u00b4s journey, including attraction, full understanding of his or her needs, expectations, desires and psichyc representation of the desired future, economic constraints and possibilities, and any other fact that could influence in the decision of accepting or rejecting a treatment to be proposed by the dentist. After that, the executive should be prepared to influence in the patient in order to convince him to recommend the clinic and generate referrals in his or her circles of influence (family, friends, job, social relations, social nets) in order to attract new patients to the clinic. The executive should be trained in conversations design in order to get the appropiate answers and get all the relevant data by means of his interactions with the patients through the whole journey, in an ethical but effective way. He should dedicate his time and effort to build a strong and personalized relation with each patient as to be so close that he could be invited to his or her private events, although he is not supposed to attend."
+        "question": "Hi. Act as an executive trainer specialized in Patient Relationship Management in Dental Clinics. Elaborate a detailed training program in order to prepare an executive to deal with everything that is involved in the patient´s journey, including attraction, full understanding of his or her needs, expectations, desires and psichyc representation of the desired future, economic constraints and possibilities, and any other fact that could influence in the decision of accepting or rejecting a treatment to be proposed by the dentist. After that, the executive should be prepared to influence in the patient in order to convince him to recommend the clinic and generate referrals in his or her circles of influence (family, friends, job, social relations, social nets) in order to attract new patients to the clinic. The executive should be trained in conversations design in order to get the appropiate answers and get all the relevant data by means of his interactions with the patients through the whole journey, in an ethical but effective way. He should dedicate his time and effort to build a strong and personalized relation with each patient as to be so close that he could be invited to his or her private events, although he is not supposed to attend."
     },
     {
         "uniq_id": "3544f22f",
         "task_name": "Text2Text",
-        "question": "A* is a graph traversal and path search algorithm, which is used in many fields of computer science. Compiling quantum circuits for restricted topologies can be formulated as a graph traversal. The quantum circuit consists of computational qubits and gates, and the computer can be represented as a graph (vertices are hardware qubits and the edges represent the two qubit connectivity between the qubits \u2013 Qiskit calls it coupling graph). Compiling the circuit to the coupling graph requires introducing SWAP gates. The cost of implementing a circuit gate is expressed as the number of SWAP gates inserted. The total number of SWAPs is the compilation cost.\n\nThe goal is to map the compilation problem to A* where multiple agents are searching in parallel the best solution for adapting the circuit to the coupling graph. The use case is offered by surface code lattice surgery (see Figure). Each square is an error corrected logical qubit and operations are performed by connecting the yellow patches/squares across the ancilla region (dark gray). More details upon starting the project.\n\n\nGoals:\nstarting from the code existing in the  AI course map the lattice surgery layout to the agent\u2019s map\n"
+        "question": "A* is a graph traversal and path search algorithm, which is used in many fields of computer science. Compiling quantum circuits for restricted topologies can be formulated as a graph traversal. The quantum circuit consists of computational qubits and gates, and the computer can be represented as a graph (vertices are hardware qubits and the edges represent the two qubit connectivity between the qubits – Qiskit calls it coupling graph). Compiling the circuit to the coupling graph requires introducing SWAP gates. The cost of implementing a circuit gate is expressed as the number of SWAP gates inserted. The total number of SWAPs is the compilation cost.\n\nThe goal is to map the compilation problem to A* where multiple agents are searching in parallel the best solution for adapting the circuit to the coupling graph. The use case is offered by surface code lattice surgery (see Figure). Each square is an error corrected logical qubit and operations are performed by connecting the yellow patches/squares across the ancilla region (dark gray). More details upon starting the project.\n\n\nGoals:\nstarting from the code existing in the  AI course map the lattice surgery layout to the agent’s map\n"
     },
     {
         "uniq_id": "ec6d10db",
@@ -202,17 +202,17 @@
     {
         "uniq_id": "1382a31d",
         "task_name": "Text2Text",
-        "question": "A firm produces two goods for which the demand functions are given by the equations: \n\n\ud835\udc65 = 50 \u2212 3\ud835\udc43\ud835\udc65\n\n\ud835\udc66 = 70 \u2212 3\ud835\udc43\ud835\udc4c\n\nWhere \ud835\udc65 is the amount of output for one good, \ud835\udc43\ud835\udc65 is the price of good \ud835\udc65, \ud835\udc43\ud835\udc66 is the price of good \ud835\udc66 and \ud835\udc44\ud835\udc66 is the amount of output for good y. The joint total cost function is given by: \ud835\udc36 = \ud835\udc65^2 + 6\ud835\udc65\ud835\udc66 + \ud835\udc66^2 + 16\n\na) Find the values of \ud835\udc65 \u2217 and \ud835\udc66 \u2217 that maximise profit for the firm. Solve to the nearest 2 decimal places.\n\nb) What is the maximum level of profit? Prove that this is the maximum level of profit, rather than say the minimum profit.\n\n"
+        "question": "A firm produces two goods for which the demand functions are given by the equations: \n\n𝑥 = 50 − 3𝑃𝑥\n\n𝑦 = 70 − 3𝑃𝑌\n\nWhere 𝑥 is the amount of output for one good, 𝑃𝑥 is the price of good 𝑥, 𝑃𝑦 is the price of good 𝑦 and 𝑄𝑦 is the amount of output for good y. The joint total cost function is given by: 𝐶 = 𝑥^2 + 6𝑥𝑦 + 𝑦^2 + 16\n\na) Find the values of 𝑥 ∗ and 𝑦 ∗ that maximise profit for the firm. Solve to the nearest 2 decimal places.\n\nb) What is the maximum level of profit? Prove that this is the maximum level of profit, rather than say the minimum profit.\n\n"
     },
     {
         "uniq_id": "3304d2b5",
         "task_name": "Text2Text",
-        "question": "A steel bar with a square cross-section, side length\na = 40mm, is subjected to an axial tensile force of\nF = 300kN. The properties of the steel are: ESteel = 200GPa\nand \ud835\udf08 = 0.3; \ud835\udf0eY = 320 MPa; \ud835\udf0fY = 260 MPa. Determine the reduction in lateral dimension caused by the\nforce F. "
+        "question": "A steel bar with a square cross-section, side length\na = 40mm, is subjected to an axial tensile force of\nF = 300kN. The properties of the steel are: ESteel = 200GPa\nand 𝜈 = 0.3; 𝜎Y = 320 MPa; 𝜏Y = 260 MPa. Determine the reduction in lateral dimension caused by the\nforce F. "
     },
     {
         "uniq_id": "04747b96",
         "task_name": "Text2Text",
-        "question": "Consider the same economy as in the previous question. Suppose at t=0, an investor with wealth\nw=100 wants to use it to buy equity instead of a bond. An equity contract is sE(x)=\uf062x. Since\nr=0%, a tradable equity has a price equal expected payoff, i.e. p=E[sE(x)].\na) For a=80, what fraction \uf062 of payoff does the investor obtain for p=100? \nb) For a=40, what fraction \uf062 of payoff does the investor obtain for p=100? \nSuppose equity is traded at price p=E[sE(x)].\nc) What is the information sensitivity of the equity for a=40 and a=80? \nd) Suppose a=40. Compare the information sensitivity of equity with the bond in 1(e). What\nis the intuition for the result? \ne) Suppose a<200 and a bond and equity have the same expected payoff. A bond always has\nsmaller information sensitivity than equity and other securities. Is this correct? "
+        "question": "Consider the same economy as in the previous question. Suppose at t=0, an investor with wealth\nw=100 wants to use it to buy equity instead of a bond. An equity contract is sE(x)=x. Since\nr=0%, a tradable equity has a price equal expected payoff, i.e. p=E[sE(x)].\na) For a=80, what fraction  of payoff does the investor obtain for p=100? \nb) For a=40, what fraction  of payoff does the investor obtain for p=100? \nSuppose equity is traded at price p=E[sE(x)].\nc) What is the information sensitivity of the equity for a=40 and a=80? \nd) Suppose a=40. Compare the information sensitivity of equity with the bond in 1(e). What\nis the intuition for the result? \ne) Suppose a<200 and a bond and equity have the same expected payoff. A bond always has\nsmaller information sensitivity than equity and other securities. Is this correct? "
     },
     {
         "uniq_id": "a9c50349",
@@ -222,17 +222,17 @@
     {
         "uniq_id": "8feb482b",
         "task_name": "Text2Text",
-        "question": "Please mark all the oral continuation phenomena in the following paragraphs\uff1aParachutes are big,heavy and bulky.Typical parachutes wouldn't fit beneath your plane seat.They would take up a lot of real estate on the plane and add to its overall weight.To tackle that,parachutes would be have to be made significantly smaller.Plus there would have to be systems in place to ensure that the parachute opens only when the passenger is ready to deploy it,and that they work seamlessly every time.All of these factors add to the overall cost of a single flight which needless to say the passengers would have to bear.As a result,ticket prices would soar and that's just bad news for the airline businesses.As such,money becomes a major deterrent for having parachutes on \u00a0 \u00a0 board airplanes.It's important to realize that when the engines of a plane fail mid flight,the plane doesn't just drop out of the sky like a stone,it still has the ability to glide.Something that pilots use to execute an emergency landing when something goes wrong.\nAll in all,it's safe to say that if something goes wrong during a flight,passengers are safer if they remain strapped to their seats while the pilots attempt an emergency landing rather than jumping out of the plane at 40,000 feet."
+        "question": "Please mark all the oral continuation phenomena in the following paragraphs：Parachutes are big,heavy and bulky.Typical parachutes wouldn't fit beneath your plane seat.They would take up a lot of real estate on the plane and add to its overall weight.To tackle that,parachutes would be have to be made significantly smaller.Plus there would have to be systems in place to ensure that the parachute opens only when the passenger is ready to deploy it,and that they work seamlessly every time.All of these factors add to the overall cost of a single flight which needless to say the passengers would have to bear.As a result,ticket prices would soar and that's just bad news for the airline businesses.As such,money becomes a major deterrent for having parachutes on     board airplanes.It's important to realize that when the engines of a plane fail mid flight,the plane doesn't just drop out of the sky like a stone,it still has the ability to glide.Something that pilots use to execute an emergency landing when something goes wrong.\nAll in all,it's safe to say that if something goes wrong during a flight,passengers are safer if they remain strapped to their seats while the pilots attempt an emergency landing rather than jumping out of the plane at 40,000 feet."
     },
     {
         "uniq_id": "abc39a84",
         "task_name": "Text2Text",
-        "question": "Please localize this plant name from plants vs zombies 2 chinese version for plants vs zombies 2 internation version and you have to do a good job localizing so it is not chinglish and know how popcap sometimes puts english puns in pvz plant names and make it flow well\n\nThe first plant is based on the bunny succulent. The name is \"\u53cc\u751f\u536f\u5154\" and the description is \"\u53cc\u751f\u536f\u5154\u94bb\u5165\u5730\u4e0b\u5e76\u5728\u524d\u65b9\u50f5\u5c38\u811a\u4e0b\u94bb\u51fa\u5c06\u5176\u51fb\u98de\""
+        "question": "Please localize this plant name from plants vs zombies 2 chinese version for plants vs zombies 2 internation version and you have to do a good job localizing so it is not chinglish and know how popcap sometimes puts english puns in pvz plant names and make it flow well\n\nThe first plant is based on the bunny succulent. The name is \"双生卯兔\" and the description is \"双生卯兔钻入地下并在前方僵尸脚下钻出将其击飞\""
     },
     {
         "uniq_id": "aed255a4",
         "task_name": "Text2Text",
-        "question": "I feel as though the templating on the rules text for my custom MTG instant might not match modern MTG templating and rules formatting (Particularly the kicker clause). If it doesn't, how could it be made to do so?\n\n\"Kicker\u2014 Discard a card. (You may  Discard a card in addition to any other costs as you cast this spell.)\nSearch your library for a card and reveal it. Shuffle your library, then put the revealed card third from the top.\nIf this spell was kicked, you may put it on the top of your library after shuffling instead.\""
+        "question": "I feel as though the templating on the rules text for my custom MTG instant might not match modern MTG templating and rules formatting (Particularly the kicker clause). If it doesn't, how could it be made to do so?\n\n\"Kicker— Discard a card. (You may  Discard a card in addition to any other costs as you cast this spell.)\nSearch your library for a card and reveal it. Shuffle your library, then put the revealed card third from the top.\nIf this spell was kicked, you may put it on the top of your library after shuffling instead.\""
     },
     {
         "uniq_id": "1c80b0be",
@@ -1197,7 +1197,7 @@
     {
         "uniq_id": "85b02378",
         "task_name": "Text2Image",
-        "question": "Can you help me generate an image that illustrates the following idea? A masterpiece of art depicting the weather cycle by Gerald Brom and Zdzis\u0142aw Beksin\u0301ski."
+        "question": "Can you help me generate an image that illustrates the following idea? A masterpiece of art depicting the weather cycle by Gerald Brom and Zdzisław Beksiński."
     },
     {
         "uniq_id": "70424006",
@@ -1752,7 +1752,7 @@
     {
         "uniq_id": "1731426118_151fe00f",
         "task_name": "Text2Video",
-        "question": "I would like to see a video created from the following idea or scenario. A sleek, vintage purple car glides down a winding coastal road, its polished exterior gleaming under the golden rays of the setting sun. The car's chrome accents and whitewall tires add a touch of classic elegance, while the ocean waves crash against the rocky shore in the background. As the car rounds a bend, the camera captures a close-up of its intricate grille and shining headlights, reflecting the vibrant hues of the sunset. The scene transitions to an interior view, showcasing the luxurious leather seats and retro dashboard, with the driver\u2019s hands gripping the wooden steering wheel, exuding a sense of timeless adventure."
+        "question": "I would like to see a video created from the following idea or scenario. A sleek, vintage purple car glides down a winding coastal road, its polished exterior gleaming under the golden rays of the setting sun. The car's chrome accents and whitewall tires add a touch of classic elegance, while the ocean waves crash against the rocky shore in the background. As the car rounds a bend, the camera captures a close-up of its intricate grille and shining headlights, reflecting the vibrant hues of the sunset. The scene transitions to an interior view, showcasing the luxurious leather seats and retro dashboard, with the driver’s hands gripping the wooden steering wheel, exuding a sense of timeless adventure."
     },
     {
         "uniq_id": "1731426118_939b00eb",
@@ -1772,7 +1772,7 @@
     {
         "uniq_id": "1731426118_6841f450",
         "task_name": "Text2Video",
-        "question": "Please provide a video that brings the following idea to life. A bright yellow city bus, filled with weary commuters, is stuck in bumper-to-bumper traffic on a bustling urban street during rush hour. The scene captures the frustration of the passengers, some peering out the windows, others engrossed in their phones. The bus is surrounded by a sea of cars, honking and inching forward, with towering skyscrapers and neon signs illuminating the twilight sky. Street vendors and pedestrians weave through the congestion, adding to the chaotic atmosphere. The camera zooms in on the bus driver, his face a mix of determination and resignation, as the city\u2019s vibrant yet overwhelming energy pulses around him."
+        "question": "Please provide a video that brings the following idea to life. A bright yellow city bus, filled with weary commuters, is stuck in bumper-to-bumper traffic on a bustling urban street during rush hour. The scene captures the frustration of the passengers, some peering out the windows, others engrossed in their phones. The bus is surrounded by a sea of cars, honking and inching forward, with towering skyscrapers and neon signs illuminating the twilight sky. Street vendors and pedestrians weave through the congestion, adding to the chaotic atmosphere. The camera zooms in on the bus driver, his face a mix of determination and resignation, as the city’s vibrant yet overwhelming energy pulses around him."
     },
     {
         "uniq_id": "1731426118_cf747c9c",
@@ -2199,7 +2199,7 @@
         "image_path": [
             "images/DemonBench/MMCoQA/685.jpg"
         ],
-        "question": "Provided with a variety of pertinent information, including images, text, tables, and previous Q&A history, your role is to answer the upcoming question accurately.\n\nContext: Global Table: {table#1} Current Context: Text: Giorgio Armani S.P.A. (pronounced (\u02c8d\u0292ord\u0292o ar\u02c8ma\u02d0ni)) is an Italian luxury fashion house founded by Giorgio Armani which designs, manufactures, distributes and retails haute couture, ready-to-wear, leather goods, shoes, watches, jewelry, accessories, eyewear, cosmetics and home interiors. The brand markets these products under several labels: Giorgio Armani Priv\u00e9, Giorgio Armani, Armani Collezioni, Emporio Armani (including EA7), AJ Armani Jeans, Armani Junior, and AX Armani Exchange. The brand utilizes the association of the Armani name with high-fashion, benefiting from its prestige in the fashion industry. In 2016, estimated sales of the company were around $2.65 billion. In 2017, Giorgio Armani announced that his company will close two of its fashion labels, Armani Collezioni and Armani Jeans, as part of the restructuring process for his company. While Armani Collezioni will merge back into the \"Giorgio Armani\" line, Armani Jeans will be mixed with the Emporio Armani line due to their similarities in styles and the use of the same brand logo. Question: is armani exchange the same as giorgio armani, Why? Answer:"
+        "question": "Provided with a variety of pertinent information, including images, text, tables, and previous Q&A history, your role is to answer the upcoming question accurately.\n\nContext: Global Table: {table#1} Current Context: Text: Giorgio Armani S.P.A. (pronounced (ˈdʒordʒo arˈmaːni)) is an Italian luxury fashion house founded by Giorgio Armani which designs, manufactures, distributes and retails haute couture, ready-to-wear, leather goods, shoes, watches, jewelry, accessories, eyewear, cosmetics and home interiors. The brand markets these products under several labels: Giorgio Armani Privé, Giorgio Armani, Armani Collezioni, Emporio Armani (including EA7), AJ Armani Jeans, Armani Junior, and AX Armani Exchange. The brand utilizes the association of the Armani name with high-fashion, benefiting from its prestige in the fashion industry. In 2016, estimated sales of the company were around $2.65 billion. In 2017, Giorgio Armani announced that his company will close two of its fashion labels, Armani Collezioni and Armani Jeans, as part of the restructuring process for his company. While Armani Collezioni will merge back into the \"Giorgio Armani\" line, Armani Jeans will be mixed with the Emporio Armani line due to their similarities in styles and the use of the same brand logo. Question: is armani exchange the same as giorgio armani, Why? Answer:"
     },
     {
         "uniq_id": "1732019007_523_0bfc8664",
@@ -2230,7 +2230,7 @@
             "images/DemonBench/MMCoQA/2557.jpg",
             "images/DemonBench/MMCoQA/2555.jpg"
         ],
-        "question": "Given a set of relevant data, comprising images, text, tables, as well as prior Q&A interactions, please provide an accurate response to the subsequent query.\n\nContext: Global Table: {table#1} History Context 1: Text: Branko Oblak (born 27 May 1947 in Ljubljana, PR Slovenia, FPR Yugoslavia) is a Slovenian football coach and former international player. He usually played as an attacking midfielder or deep-lying playmaker. Question: What town was the 1990s manager of ND \u010crnu\u010de born in? Answer: Ljubljana.  History Context 2: {image#2} Question: Where is a dragon statue in the 2007-08 UEFA Europa League? Answer: Ljubljana.  History Context 3: Table: {table#3} Question: Which team in the Europa League played in Ljubljana in 2007-08? Answer: Union Olimpija.  History Context 4: {image#4} Question: When looking at the Slovenian PrvaLiga team summary for the 2009-2010 season, which city is a city featuring a dragon statue? Answer: Ljubljana.  Current Context: {table#5}  Question: When looking at the Slovenian PrvaLiga team summary for the 2009-2010 season, which teams played in the stadium in Ljubljana Answer:"
+        "question": "Given a set of relevant data, comprising images, text, tables, as well as prior Q&A interactions, please provide an accurate response to the subsequent query.\n\nContext: Global Table: {table#1} History Context 1: Text: Branko Oblak (born 27 May 1947 in Ljubljana, PR Slovenia, FPR Yugoslavia) is a Slovenian football coach and former international player. He usually played as an attacking midfielder or deep-lying playmaker. Question: What town was the 1990s manager of ND Črnuče born in? Answer: Ljubljana.  History Context 2: {image#2} Question: Where is a dragon statue in the 2007-08 UEFA Europa League? Answer: Ljubljana.  History Context 3: Table: {table#3} Question: Which team in the Europa League played in Ljubljana in 2007-08? Answer: Union Olimpija.  History Context 4: {image#4} Question: When looking at the Slovenian PrvaLiga team summary for the 2009-2010 season, which city is a city featuring a dragon statue? Answer: Ljubljana.  Current Context: {table#5}  Question: When looking at the Slovenian PrvaLiga team summary for the 2009-2010 season, which teams played in the stadium in Ljubljana Answer:"
     },
     {
         "uniq_id": "1732019007_484_6ab731ef",
@@ -2258,7 +2258,7 @@
             "images/DemonBench/MMCoQA/4122.jpg",
             "images/DemonBench/MMCoQA/4122.jpg"
         ],
-        "question": "Having a collection of pertinent data that comprises of images, text, tables, and past Q&A dialogues, your duty is to provide an accurate response to the following question.\n\nContext: Global Table: {table#1} History Context 1: Text: The Basic Law of Hong Kong stipulates that Chinese and English are the two official languages of Hong Kong. During the British colonial era, English was the sole official language until 1974. As the majority of the population in Hong Kong are descendants of migrants from China's Canton Province, the vast majority speak standard Cantonese or other Yue Chinese varieties as a first language, with smaller numbers of speakers of Hakka Language or the Teochew dialect of Southern Min. In addition, immigrants and expatriates from the West and other Asian countries have contributed much to Hong Kong's linguistic and demographic diversity. Question: What are the spoken languages in Hong Kong? Answer: Chinese. English.  History Context 2: Table: {table#2} Question: What about those in Northern-Irelands demographics as the main language spoken by 0.13% of the population\uff1f Answer: Portuguese. Slovak. Chinese.  History Context 3: Table: {table#3} Question: what spoken labuages among them are used in both Hong Kong and Northern-Irelands demographics Answer: Chinese.  History Context 4: Text: Hong Kong (Chinese: \u9999\u6e2f; pronunciation in Hong Kong Cantonese: (h\u0153\u0301\u02d0\u014b.k\u0254\u030c\u02d0\u014b) ( listen)), officially the Hong Kong Special Administrative Region of the People's Republic of China, is a special administrative region on the eastern side of the Pearl River estuary in southern China. With over 7.4 million people of various nationalities in a 1,104-square-kilometre (426 sq mi) territory, Hong Kong is the world's fourth-most-densely-populated region. Question: does people's republic of china include hong kong Answer: yes.  History Context 5: Text: Ocean Park Halloween Bash (\u6d77\u6d0b\u516c\u5712\u54c8\u56c9\u5582) is an annual Halloween event held by Ocean Park Hong Kong. It contains haunted attractions and shows, the park area is decorated with Halloween decorations and full of Halloween characters that are dressed up by the officials. The Halloween Bash in Ocean Park started in 2001 and it held during late September to 1 November each year. It has changed to All-Day-and-Night Halloween Celebration in 2013. Question: What year did Ocean Park Hong Kong,a marine mammal park, oceanarium, animal theme park and amusement park situated in Wong Chuk Hang and Nam Long Shan in the Southern District of this city, change its Ocean Park Halloween Bash to  All-Day-and-Night Halloween Celebration? Answer: 2013.  History Context 6: Text: Millennium Force is a steel roller coaster built by Intamin at Cedar Point amusement park in Sandusky, Ohio, United States. It was the fourteenth roller coaster to be built at the park since Blue Streak opened in 1964. Upon completion in 2000, Millennium Force broke six world records and was the world's first Giga Coaster, a roller coaster that exceeds 300 feet (91\u00a0m) in height and completes a full circuit. It was briefly the tallest and fastest in the world until Steel Dragon 2000 opened later the same year. The ride is also the third-longest roller coaster in North America after The Beast at Kings Island and Fury 325 at Carowinds. It was the first roller coaster to use a cable lift system rather than a traditional chain lift. The coaster has a 310\u00a0ft (94\u00a0m), 45-degree lift hill with a 300\u00a0ft (91\u00a0m) drop and features two tunnels, three overbanked turns, and four hills. It has a top speed of 93\u00a0mph (150\u00a0km/h). Text: Blue Streak is a wooden roller coaster located at Cedar Point in Sandusky, Ohio. Built by Philadelphia Toboggan Company, Blue Streak opened to the public on May 23, 1964, and is the park's oldest roller coaster. In 2013, it achieved its highest ranking of 27 among the world's top wooden roller coasters in the annual Golden Ticket Awards publication by Amusement Today. Text: Blue Streak is a wooden roller coaster located at Cedar Point in Sandusky, Ohio. Built by Philadelphia Toboggan Company, Blue Streak opened to the public on May 23, 1964, and is the park's oldest roller coaster. In 2013, it achieved its highest ranking of 27 among the world's top wooden roller coasters in the annual Golden Ticket Awards publication by Amusement Today. Question: Millennium Force is a steel roller coaster that was the 14th roller coaster to be built at Cedar Point amusement park, since what wooden roller coaster opened to the public on May 23, 1964? Answer: Blue Streak.  History Context 7: Text: Final Destination 3 is a 2006 American supernatural horror film directed by James Wong and the third installment in the Final Destination film series. The screenplay was written by Wong and Glen Morgan, both of whom had worked on the franchise's first film in 2000. Final Destination 3 stars Mary Elizabeth Winstead and Ryan Merriman, and is set five years[note 1] after the first film. Winstead plays Wendy Christensen, a teenager who has a premonition that a roller coaster on which she and her classmates are riding derails. Although she saves some of them, Death begins hunting for the survivors. Wendy realizes the photos she took in the amusement park contain clues about how her classmates will die, and tries to use them to save the rest of the survivors and foil Death's design. Question: Corkscrew is a steel roller coaster located at Playland, at the PNE amusement park in Vancouver, British Columbia, Canada, it is famous for its appearance in Final Destination 3,a 2006 American supernatural horror film directed by who, and the third installment in the Final Destination film series? Answer: James Wong.  Current Context: Text: However, in Final Destination 2, Clear exposes to Kimberly Corman that Alex died by being bludgeoned on the head by a dislodged brick from a nearby building. This was, however, not the original idea for this death; another version of the script had Alex, still killed off-screen, be killed by a ceiling fan. This death, however, was not his original planned death either for a third version of the script (the very original script) had Alex be killed by a flesh eating virus. He was briefly mentioned in Final Destination 3 and appeared in Final Destination 5. Question: what happened to alex browning in final destination Answer:"
+        "question": "Having a collection of pertinent data that comprises of images, text, tables, and past Q&A dialogues, your duty is to provide an accurate response to the following question.\n\nContext: Global Table: {table#1} History Context 1: Text: The Basic Law of Hong Kong stipulates that Chinese and English are the two official languages of Hong Kong. During the British colonial era, English was the sole official language until 1974. As the majority of the population in Hong Kong are descendants of migrants from China's Canton Province, the vast majority speak standard Cantonese or other Yue Chinese varieties as a first language, with smaller numbers of speakers of Hakka Language or the Teochew dialect of Southern Min. In addition, immigrants and expatriates from the West and other Asian countries have contributed much to Hong Kong's linguistic and demographic diversity. Question: What are the spoken languages in Hong Kong? Answer: Chinese. English.  History Context 2: Table: {table#2} Question: What about those in Northern-Irelands demographics as the main language spoken by 0.13% of the population？ Answer: Portuguese. Slovak. Chinese.  History Context 3: Table: {table#3} Question: what spoken labuages among them are used in both Hong Kong and Northern-Irelands demographics Answer: Chinese.  History Context 4: Text: Hong Kong (Chinese: 香港; pronunciation in Hong Kong Cantonese: (hœ́ːŋ.kɔ̌ːŋ) ( listen)), officially the Hong Kong Special Administrative Region of the People's Republic of China, is a special administrative region on the eastern side of the Pearl River estuary in southern China. With over 7.4 million people of various nationalities in a 1,104-square-kilometre (426 sq mi) territory, Hong Kong is the world's fourth-most-densely-populated region. Question: does people's republic of china include hong kong Answer: yes.  History Context 5: Text: Ocean Park Halloween Bash (海洋公園哈囉喂) is an annual Halloween event held by Ocean Park Hong Kong. It contains haunted attractions and shows, the park area is decorated with Halloween decorations and full of Halloween characters that are dressed up by the officials. The Halloween Bash in Ocean Park started in 2001 and it held during late September to 1 November each year. It has changed to All-Day-and-Night Halloween Celebration in 2013. Question: What year did Ocean Park Hong Kong,a marine mammal park, oceanarium, animal theme park and amusement park situated in Wong Chuk Hang and Nam Long Shan in the Southern District of this city, change its Ocean Park Halloween Bash to  All-Day-and-Night Halloween Celebration? Answer: 2013.  History Context 6: Text: Millennium Force is a steel roller coaster built by Intamin at Cedar Point amusement park in Sandusky, Ohio, United States. It was the fourteenth roller coaster to be built at the park since Blue Streak opened in 1964. Upon completion in 2000, Millennium Force broke six world records and was the world's first Giga Coaster, a roller coaster that exceeds 300 feet (91 m) in height and completes a full circuit. It was briefly the tallest and fastest in the world until Steel Dragon 2000 opened later the same year. The ride is also the third-longest roller coaster in North America after The Beast at Kings Island and Fury 325 at Carowinds. It was the first roller coaster to use a cable lift system rather than a traditional chain lift. The coaster has a 310 ft (94 m), 45-degree lift hill with a 300 ft (91 m) drop and features two tunnels, three overbanked turns, and four hills. It has a top speed of 93 mph (150 km/h). Text: Blue Streak is a wooden roller coaster located at Cedar Point in Sandusky, Ohio. Built by Philadelphia Toboggan Company, Blue Streak opened to the public on May 23, 1964, and is the park's oldest roller coaster. In 2013, it achieved its highest ranking of 27 among the world's top wooden roller coasters in the annual Golden Ticket Awards publication by Amusement Today. Text: Blue Streak is a wooden roller coaster located at Cedar Point in Sandusky, Ohio. Built by Philadelphia Toboggan Company, Blue Streak opened to the public on May 23, 1964, and is the park's oldest roller coaster. In 2013, it achieved its highest ranking of 27 among the world's top wooden roller coasters in the annual Golden Ticket Awards publication by Amusement Today. Question: Millennium Force is a steel roller coaster that was the 14th roller coaster to be built at Cedar Point amusement park, since what wooden roller coaster opened to the public on May 23, 1964? Answer: Blue Streak.  History Context 7: Text: Final Destination 3 is a 2006 American supernatural horror film directed by James Wong and the third installment in the Final Destination film series. The screenplay was written by Wong and Glen Morgan, both of whom had worked on the franchise's first film in 2000. Final Destination 3 stars Mary Elizabeth Winstead and Ryan Merriman, and is set five years[note 1] after the first film. Winstead plays Wendy Christensen, a teenager who has a premonition that a roller coaster on which she and her classmates are riding derails. Although she saves some of them, Death begins hunting for the survivors. Wendy realizes the photos she took in the amusement park contain clues about how her classmates will die, and tries to use them to save the rest of the survivors and foil Death's design. Question: Corkscrew is a steel roller coaster located at Playland, at the PNE amusement park in Vancouver, British Columbia, Canada, it is famous for its appearance in Final Destination 3,a 2006 American supernatural horror film directed by who, and the third installment in the Final Destination film series? Answer: James Wong.  Current Context: Text: However, in Final Destination 2, Clear exposes to Kimberly Corman that Alex died by being bludgeoned on the head by a dislodged brick from a nearby building. This was, however, not the original idea for this death; another version of the script had Alex, still killed off-screen, be killed by a ceiling fan. This death, however, was not his original planned death either for a third version of the script (the very original script) had Alex be killed by a flesh eating virus. He was briefly mentioned in Final Destination 3 and appeared in Final Destination 5. Question: what happened to alex browning in final destination Answer:"
     },
     {
         "uniq_id": "1732019007_1049_e96088bb",
@@ -6905,601 +6905,701 @@
         "uniq_id": "1732173202_1054_7e05b36d",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/twhC-FhqnkU_0.000_10.000.mp4",
-        "question": "How does the sound enhance the visual experience of the plant, and what emotions might it evoke in the viewer?"
+        "question": "How does the sound enhance the visual experience of the plant, and what emotions might it evoke in the viewer?",
+        "audio_path": "audios/Valor_AVQA/twhC-FhqnkU_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_702_5a21371a",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/FmytwY7SAfU_60.000_70.000.mp4",
-        "question": "What techniques might the man use to play the thrilling sound, and how do these techniques affect the audience's experience?"
+        "question": "What techniques might the man use to play the thrilling sound, and how do these techniques affect the audience's experience?",
+        "audio_path": "audios/Valor_AVQA/FmytwY7SAfU_60.000_70.000.mp3"
     },
     {
         "uniq_id": "1732173202_758_2d658ea7",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/BbVoVbQHoXo_30.000_40.000.mp4",
-        "question": "Describe the typewriter sound. "
+        "question": "Describe the typewriter sound. ",
+        "audio_path": "audios/Valor_AVQA/BbVoVbQHoXo_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1886_e2ae2489",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/JLyjEE1UKaU_30.000_40.000.mp4",
-        "question": "Describe the scene"
+        "question": "Describe the scene",
+        "audio_path": "audios/Valor_AVQA/JLyjEE1UKaU_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_659_b830cbdc",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/j5tu5_YvTG4_60.000_70.000.mp4",
-        "question": "Considering the environment in the video, why do you think this clock is placed here? What purpose might it serve?"
+        "question": "Considering the environment in the video, why do you think this clock is placed here? What purpose might it serve?",
+        "audio_path": "audios/Valor_AVQA/j5tu5_YvTG4_60.000_70.000.mp3"
     },
     {
         "uniq_id": "1732173202_33_a6b8f0ad",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ebwdFQB-5Fg_30.000_40.000.mp4",
-        "question": "How does the man use objects to interpret what he is saying? How does he use objects and words together to convey a message to his audience?"
+        "question": "How does the man use objects to interpret what he is saying? How does he use objects and words together to convey a message to his audience?",
+        "audio_path": "audios/Valor_AVQA/ebwdFQB-5Fg_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1284_0a49083a",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/NyvnehbkZcQ_30.000_40.000.mp4",
-        "question": "What might have caused the pet to act like that?"
+        "question": "What might have caused the pet to act like that?",
+        "audio_path": "audios/Valor_AVQA/NyvnehbkZcQ_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2542_127fb954",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/QvQnPMiqkdM_80.000_90.000.mp4",
-        "question": "What might the little girl feel in that environment?"
+        "question": "What might the little girl feel in that environment?",
+        "audio_path": "audios/Valor_AVQA/QvQnPMiqkdM_80.000_90.000.mp3"
     },
     {
         "uniq_id": "1732173202_244_38390a02",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/q50GQb2LFUs_30.000_40.000.mp4",
-        "question": "What is the man doing? Why it's so noisy"
+        "question": "What is the man doing? Why it's so noisy",
+        "audio_path": "audios/Valor_AVQA/q50GQb2LFUs_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_3142_a9906fe2",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ERpBHP3sKkM_10.000_20.000.mp4",
-        "question": "What is showing in this video? Can you guess the intrinsic mechanism?"
+        "question": "What is showing in this video? Can you guess the intrinsic mechanism?",
+        "audio_path": "audios/Valor_AVQA/ERpBHP3sKkM_10.000_20.000.mp3"
     },
     {
         "uniq_id": "1732173202_801_58c4d866",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/kXCfFp7dF7A_70.000_80.000.mp4",
-        "question": "Can you recognize how many people are singing? What does the song trying to convey?"
+        "question": "Can you recognize how many people are singing? What does the song trying to convey?",
+        "audio_path": "audios/Valor_AVQA/kXCfFp7dF7A_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_2943_27314622",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/Bgcvw5VEabw_130.000_140.000.mp4",
-        "question": "Why is the man in the video showing and what does he want?"
+        "question": "Why is the man in the video showing and what does he want?",
+        "audio_path": "audios/Valor_AVQA/Bgcvw5VEabw_130.000_140.000.mp3"
     },
     {
         "uniq_id": "1732173202_2228_d052dca4",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/YE2rN3xknlk_30.000_40.000.mp4",
-        "question": "Describe what is showing in the video"
+        "question": "Describe what is showing in the video",
+        "audio_path": "audios/Valor_AVQA/YE2rN3xknlk_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1705_aeea3676",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/bBtijEqDWSw_220.000_230.000.mp4",
-        "question": "How can the man's current emotional state be analyzed based on the scene and the interactions between the people?"
+        "question": "How can the man's current emotional state be analyzed based on the scene and the interactions between the people?",
+        "audio_path": "audios/Valor_AVQA/bBtijEqDWSw_220.000_230.000.mp3"
     },
     {
         "uniq_id": "1732173202_278_04a863fe",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/NyPZ0UkcoKU_180.000_190.000.mp4",
-        "question": "How does the appearance of sound in the forest background affect the overall atmosphere of the video, and what might it have to do with the activity of the man?"
+        "question": "How does the appearance of sound in the forest background affect the overall atmosphere of the video, and what might it have to do with the activity of the man?",
+        "audio_path": "audios/Valor_AVQA/NyPZ0UkcoKU_180.000_190.000.mp3"
     },
     {
         "uniq_id": "1732173202_3266_35fe9351",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/s9nyqHyzI_E_200.000_210.000.mp4",
-        "question": "The video showcases the practical operations of dairy farming. What are some key aspects of the process that we can learn from?"
+        "question": "The video showcases the practical operations of dairy farming. What are some key aspects of the process that we can learn from?",
+        "audio_path": "audios/Valor_AVQA/s9nyqHyzI_E_200.000_210.000.mp3"
     },
     {
         "uniq_id": "1732173202_2471_98857450",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/oyiz2ss4Z08_30.000_40.000.mp4",
-        "question": "What do you think of the dancing man and his appearance?"
+        "question": "What do you think of the dancing man and his appearance?",
+        "audio_path": "audios/Valor_AVQA/oyiz2ss4Z08_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2461_c91d7537",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/sWN5-jMQCgs_20.000_30.000.mp4",
-        "question": "Do you know what is going on out there?"
+        "question": "Do you know what is going on out there?",
+        "audio_path": "audios/Valor_AVQA/sWN5-jMQCgs_20.000_30.000.mp3"
     },
     {
         "uniq_id": "1732173202_2279_d30afeff",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/RI71ebbU0PQ_0.000_10.000.mp4",
-        "question": "Judge the rhythm?"
+        "question": "Judge the rhythm?",
+        "audio_path": "audios/Valor_AVQA/RI71ebbU0PQ_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_1194_9cf3275b",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/bMcuStzUhNo_0.000_6.000.mp4",
-        "question": "What does the mouse's voice and its movements suggest that the mouse might be feeling?"
+        "question": "What does the mouse's voice and its movements suggest that the mouse might be feeling?",
+        "audio_path": "audios/Valor_AVQA/bMcuStzUhNo_0.000_6.000.mp3"
     },
     {
         "uniq_id": "1732173202_1498_549a6b52",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/cyxzziWTK04_240.000_250.000.mp4",
-        "question": "In what ways might the audio accompanying the video contribute to the viewer's understanding of the scene?"
+        "question": "In what ways might the audio accompanying the video contribute to the viewer's understanding of the scene?",
+        "audio_path": "audios/Valor_AVQA/cyxzziWTK04_240.000_250.000.mp3"
     },
     {
         "uniq_id": "1732173202_49_5642d9bd",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/8AIKets-Q3Q_180.000_190.000.mp4",
-        "question": "How does the audio combine with the character's movements to set the mood? What is the difference between the before and after movements of the characters' strikes?"
+        "question": "How does the audio combine with the character's movements to set the mood? What is the difference between the before and after movements of the characters' strikes?",
+        "audio_path": "audios/Valor_AVQA/8AIKets-Q3Q_180.000_190.000.mp3"
     },
     {
         "uniq_id": "1732173202_2507_3266a030",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/yoK4rannXCw_70.000_80.000.mp4",
-        "question": "How did these two manage to synchronize their dance with the rhythm of the music?"
+        "question": "How did these two manage to synchronize their dance with the rhythm of the music?",
+        "audio_path": "audios/Valor_AVQA/yoK4rannXCw_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_2351_d5bcb3e8",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/B8HCQ3rEXM4_26.000_36.000.mp4",
-        "question": "What is the purpose of pressing the button?"
+        "question": "What is the purpose of pressing the button?",
+        "audio_path": "audios/Valor_AVQA/B8HCQ3rEXM4_26.000_36.000.mp3"
     },
     {
         "uniq_id": "1732173202_388_a4a52ca4",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/pOZWVSiRwv4_390.000_400.000.mp4",
-        "question": "Describe what is the woman doing?"
+        "question": "Describe what is the woman doing?",
+        "audio_path": "audios/Valor_AVQA/pOZWVSiRwv4_390.000_400.000.mp3"
     },
     {
         "uniq_id": "1732173202_2571_0123350e",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/vcj4kacdmds_30.000_40.000.mp4",
-        "question": "How does the background music enhance the visual experience, and what kind of atmosphere does it create?"
+        "question": "How does the background music enhance the visual experience, and what kind of atmosphere does it create?",
+        "audio_path": "audios/Valor_AVQA/vcj4kacdmds_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1761_7085f06e",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/e4V7HBmjvFg_30.000_40.000.mp4",
-        "question": "How does the combination influence the mood of the scene?"
+        "question": "How does the combination influence the mood of the scene?",
+        "audio_path": "audios/Valor_AVQA/e4V7HBmjvFg_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_682_16163614",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/G_HFPXAXqnM_70.000_80.000.mp4",
-        "question": "How does the audio help the viewer understand what the woman is doing in the video?"
+        "question": "How does the audio help the viewer understand what the woman is doing in the video?",
+        "audio_path": "audios/Valor_AVQA/G_HFPXAXqnM_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_2665_d95d8dc8",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/mjZylz3nCwQ_230.000_240.000.mp4",
-        "question": "Describe the scene, what's the atmosphere?"
+        "question": "Describe the scene, what's the atmosphere?",
+        "audio_path": "audios/Valor_AVQA/mjZylz3nCwQ_230.000_240.000.mp3"
     },
     {
         "uniq_id": "1732173202_2102_b44d814d",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/2v0Lmxftv_4_80.000_90.000.mp4",
-        "question": "Where are they? What are they doing?"
+        "question": "Where are they? What are they doing?",
+        "audio_path": "audios/Valor_AVQA/2v0Lmxftv_4_80.000_90.000.mp3"
     },
     {
         "uniq_id": "1732173202_1155_1b2d8825",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/s1L8oRfvGf0_30.000_40.000.mp4",
-        "question": " What did the firemen do?"
+        "question": " What did the firemen do?",
+        "audio_path": "audios/Valor_AVQA/s1L8oRfvGf0_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2540_9ad229d0",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/C2gkVodtiCs_60.000_70.000.mp4",
-        "question": "In what ways might the visual elements of the video, convey a sense of luxury or adventure?"
+        "question": "In what ways might the visual elements of the video, convey a sense of luxury or adventure?",
+        "audio_path": "audios/Valor_AVQA/C2gkVodtiCs_60.000_70.000.mp3"
     },
     {
         "uniq_id": "1732173202_1704_68007916",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/1OIfQHKnAcw_20.000_30.000.mp4",
-        "question": "What's the man doing? did he sing without any accompaniment?"
+        "question": "What's the man doing? did he sing without any accompaniment?",
+        "audio_path": "audios/Valor_AVQA/1OIfQHKnAcw_20.000_30.000.mp3"
     },
     {
         "uniq_id": "1732173202_2988_854d413b",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/C4gMM8aXagQ_30.000_40.000.mp4",
-        "question": "What might be the reason of recording that video"
+        "question": "What might be the reason of recording that video",
+        "audio_path": "audios/Valor_AVQA/C4gMM8aXagQ_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_3227_6beb2767",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/mfZMcNmLxWM_30.000_40.000.mp4",
-        "question": "What atmosphere is set?"
+        "question": "What atmosphere is set?",
+        "audio_path": "audios/Valor_AVQA/mfZMcNmLxWM_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_3113_cf3554bf",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/xxqBs0j4eyM_20.000_30.000.mp4",
-        "question": "What is the man doing?"
+        "question": "What is the man doing?",
+        "audio_path": "audios/Valor_AVQA/xxqBs0j4eyM_20.000_30.000.mp3"
     },
     {
         "uniq_id": "1732173202_944_b701498a",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/GdnUj_tYStA_30.000_40.000.mp4",
-        "question": "What is the sound indicate? What's the purpose of that white machine behind."
+        "question": "What is the sound indicate? What's the purpose of that white machine behind.",
+        "audio_path": "audios/Valor_AVQA/GdnUj_tYStA_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1585_b6a3f4a6",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/dSzZWgbJ378_30.000_40.000.mp4",
-        "question": "What's the difference between two trains?"
+        "question": "What's the difference between two trains?",
+        "audio_path": "audios/Valor_AVQA/dSzZWgbJ378_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2761_d0290d7d",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/AVogdV8khxc_30.000_40.000.mp4",
-        "question": "Where are we? What is happening?"
+        "question": "Where are we? What is happening?",
+        "audio_path": "audios/Valor_AVQA/AVogdV8khxc_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1250_30f1b585",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/IMCroSdHR54_30.000_40.000.mp4",
-        "question": "Describe the group of people and what are they doing"
+        "question": "Describe the group of people and what are they doing",
+        "audio_path": "audios/Valor_AVQA/IMCroSdHR54_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2839_b9d0e4c8",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/qDM8y8DvB-Y_21.000_31.000.mp4",
-        "question": "What is happening? What does the sound mean?"
+        "question": "What is happening? What does the sound mean?",
+        "audio_path": "audios/Valor_AVQA/qDM8y8DvB-Y_21.000_31.000.mp3"
     },
     {
         "uniq_id": "1732173202_3154_1067e1e7",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/37dcBgn9Ikk_330.000_340.000.mp4",
-        "question": "What are they doing? Is the woman eating happily?"
+        "question": "What are they doing? Is the woman eating happily?",
+        "audio_path": "audios/Valor_AVQA/37dcBgn9Ikk_330.000_340.000.mp3"
     },
     {
         "uniq_id": "1732173202_2653_8ab6fa77",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/UtNR3hx_MYg_170.000_180.000.mp4",
-        "question": "What emotions do you think the sounds convey in this scene? Describe the sounds in detail."
+        "question": "What emotions do you think the sounds convey in this scene? Describe the sounds in detail.",
+        "audio_path": "audios/Valor_AVQA/UtNR3hx_MYg_170.000_180.000.mp3"
     },
     {
         "uniq_id": "1732173202_1977_9f3f7ecd",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/a3RfULw7aAY_0.000_10.000.mp4",
-        "question": "How does the sound enhance the visual view, and what impact might this have on the viewer's perception of the scene?"
+        "question": "How does the sound enhance the visual view, and what impact might this have on the viewer's perception of the scene?",
+        "audio_path": "audios/Valor_AVQA/a3RfULw7aAY_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_2906_4e2faaef",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/HfBh3lZZi8Q_100.000_110.000.mp4",
-        "question": "What is the man doing?"
+        "question": "What is the man doing?",
+        "audio_path": "audios/Valor_AVQA/HfBh3lZZi8Q_100.000_110.000.mp3"
     },
     {
         "uniq_id": "1732173202_208_efbc290b",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/AtjcXV7VchY_30.000_40.000.mp4",
-        "question": "What's the relationship between the picture and the background sound, are they separable?"
+        "question": "What's the relationship between the picture and the background sound, are they separable?",
+        "audio_path": "audios/Valor_AVQA/AtjcXV7VchY_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2892_f6f86fb5",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/wfSPbhnpOlQ_40.000_50.000.mp4",
-        "question": "What emotions or themes could the combination of audio narration and the graphics be aiming to evoke in the audience?"
+        "question": "What emotions or themes could the combination of audio narration and the graphics be aiming to evoke in the audience?",
+        "audio_path": "audios/Valor_AVQA/wfSPbhnpOlQ_40.000_50.000.mp3"
     },
     {
         "uniq_id": "1732173202_281_4df13ba7",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/gdvxYM9H7_8_21.000_31.000.mp4",
-        "question": "What is the crowd feeling? Why are they doing that"
+        "question": "What is the crowd feeling? Why are they doing that",
+        "audio_path": "audios/Valor_AVQA/gdvxYM9H7_8_21.000_31.000.mp3"
     },
     {
         "uniq_id": "1732173202_1608_c47fbfcc",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/iAQk_vQ3XI8_200.000_210.000.mp4",
-        "question": "How does the mixure of sound contribute to the atmosphere of the scene?"
+        "question": "How does the mixure of sound contribute to the atmosphere of the scene?",
+        "audio_path": "audios/Valor_AVQA/iAQk_vQ3XI8_200.000_210.000.mp3"
     },
     {
         "uniq_id": "1732173202_924_cdf8d9ce",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/xfdv5FQOJfU_30.000_40.000.mp4",
-        "question": "How might the interaction influence the bird's behavior and sound, and what could be the implications of such teasing?"
+        "question": "How might the interaction influence the bird's behavior and sound, and what could be the implications of such teasing?",
+        "audio_path": "audios/Valor_AVQA/xfdv5FQOJfU_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2909_d0913824",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/wdbIsk487Fw_100.000_110.000.mp4",
-        "question": "Tell me what is the story"
+        "question": "Tell me what is the story",
+        "audio_path": "audios/Valor_AVQA/wdbIsk487Fw_100.000_110.000.mp3"
     },
     {
         "uniq_id": "1732173202_1971_871b9ac8",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/cwJ4tEsWxjo_50.000_60.000.mp4",
-        "question": "Describe the scene in detail"
+        "question": "Describe the scene in detail",
+        "audio_path": "audios/Valor_AVQA/cwJ4tEsWxjo_50.000_60.000.mp3"
     },
     {
         "uniq_id": "1732173202_1988_b02c5ac2",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/dlmoKkH8hlw_430.000_440.000.mp4",
-        "question": "What will the man do?"
+        "question": "What will the man do?",
+        "audio_path": "audios/Valor_AVQA/dlmoKkH8hlw_430.000_440.000.mp3"
     },
     {
         "uniq_id": "1732173202_2713_9bf931ce",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/QsqGT5c30-Y_30.000_40.000.mp4",
-        "question": "What's the noise, how does the noise influence the kitty?"
+        "question": "What's the noise, how does the noise influence the kitty?",
+        "audio_path": "audios/Valor_AVQA/QsqGT5c30-Y_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1641_4de92bc6",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/GOTpllAaJe4_0.000_10.000.mp4",
-        "question": "What are they doing? What is the yellow bird doing"
+        "question": "What are they doing? What is the yellow bird doing",
+        "audio_path": "audios/Valor_AVQA/GOTpllAaJe4_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_2118_cf177b02",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/CIiA39U8UTw_30.000_40.000.mp4",
-        "question": "Can you infer the reason of the video content?"
+        "question": "Can you infer the reason of the video content?",
+        "audio_path": "audios/Valor_AVQA/CIiA39U8UTw_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2651_d7f90d19",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/HwANigT-NEc_150.000_160.000.mp4",
-        "question": "Based on the audio and the tools appearing in the video, where might the operation be taking place and what might be happening?"
+        "question": "Based on the audio and the tools appearing in the video, where might the operation be taking place and what might be happening?",
+        "audio_path": "audios/Valor_AVQA/HwANigT-NEc_150.000_160.000.mp3"
     },
     {
         "uniq_id": "1732173202_1521_1280b628",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/6FEqX_uqGE4_0.000_7.000.mp4",
-        "question": "What caused the woman to get angry, and based on the audio, what might the girl in the room be doing?"
+        "question": "What caused the woman to get angry, and based on the audio, what might the girl in the room be doing?",
+        "audio_path": "audios/Valor_AVQA/6FEqX_uqGE4_0.000_7.000.mp3"
     },
     {
         "uniq_id": "1732173202_2572_1b57f1be",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ftc0tqwUyWA_10.000_20.000.mp4",
-        "question": "Tell me about the animal in the video in detail."
+        "question": "Tell me about the animal in the video in detail.",
+        "audio_path": "audios/Valor_AVQA/ftc0tqwUyWA_10.000_20.000.mp3"
     },
     {
         "uniq_id": "1732173202_479_46c15f1e",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/PaTD9ZA4nh0_0.000_10.000.mp4",
-        "question": "What is this person saying about the phone? What is the purpose of the video?"
+        "question": "What is this person saying about the phone? What is the purpose of the video?",
+        "audio_path": "audios/Valor_AVQA/PaTD9ZA4nh0_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_2307_3c14119f",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/xfNeZaw4o3U_17.000_27.000.mp4",
-        "question": "In what ways does the visual and audio process convey the narrative or message of the video?"
+        "question": "In what ways does the visual and audio process convey the narrative or message of the video?",
+        "audio_path": "audios/Valor_AVQA/xfNeZaw4o3U_17.000_27.000.mp3"
     },
     {
         "uniq_id": "1732173202_487_66556623",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/2KlckeHMtow_30.000_40.000.mp4",
-        "question": "The man may have used which hand movement techniques to create the illusion?"
+        "question": "The man may have used which hand movement techniques to create the illusion?",
+        "audio_path": "audios/Valor_AVQA/2KlckeHMtow_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2513_036695eb",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ipuwZG_lUrc_0.000_10.000.mp4",
-        "question": "What natural instincts might the hamster's actions on the wheel reflect, and what experience does this bring to the viewer?"
+        "question": "What natural instincts might the hamster's actions on the wheel reflect, and what experience does this bring to the viewer?",
+        "audio_path": "audios/Valor_AVQA/ipuwZG_lUrc_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_559_0b9e2f98",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/oMmqKfmiDC0_30.000_40.000.mp4",
-        "question": "How does the girl feels?"
+        "question": "How does the girl feels?",
+        "audio_path": "audios/Valor_AVQA/oMmqKfmiDC0_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1265_a7cffaa2",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/FwxKNoQ0kbE_30.000_40.000.mp4",
-        "question": "What's the atmosphere about the scene?"
+        "question": "What's the atmosphere about the scene?",
+        "audio_path": "audios/Valor_AVQA/FwxKNoQ0kbE_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2186_ae4ecfd5",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/QVprWKMTOz8_30.000_40.000.mp4",
-        "question": "Possible reasons for the coexistence of people laughing and playing and babies crying? Is it possible that a baby's crying is related to its surroundings?"
+        "question": "Possible reasons for the coexistence of people laughing and playing and babies crying? Is it possible that a baby's crying is related to its surroundings?",
+        "audio_path": "audios/Valor_AVQA/QVprWKMTOz8_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1542_fa89705c",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/rsCQ1PIGcm0_70.000_80.000.mp4",
-        "question": "What emotional responses might the characters have? Why"
+        "question": "What emotional responses might the characters have? Why",
+        "audio_path": "audios/Valor_AVQA/rsCQ1PIGcm0_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_1718_0b609924",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/gi_wYQIpkoM_30.000_40.000.mp4",
-        "question": "What are the characters in this scene, what are they doing, and what might be the relationship between them?"
+        "question": "What are the characters in this scene, what are they doing, and what might be the relationship between them?",
+        "audio_path": "audios/Valor_AVQA/gi_wYQIpkoM_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_672_25c2ee0e",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/Rhn6K9HCbC8_340.000_350.000.mp4",
-        "question": "What emotions or messages might the video be trying to communicate?"
+        "question": "What emotions or messages might the video be trying to communicate?",
+        "audio_path": "audios/Valor_AVQA/Rhn6K9HCbC8_340.000_350.000.mp3"
     },
     {
         "uniq_id": "1732173202_1815_04418dac",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/8-ZNPMhOZYY_30.000_40.000.mp4",
-        "question": "How does the interaction with the machine affect the sound, and what might this suggest about the machine's capabilities?"
+        "question": "How does the interaction with the machine affect the sound, and what might this suggest about the machine's capabilities?",
+        "audio_path": "audios/Valor_AVQA/8-ZNPMhOZYY_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1721_3d44355d",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/Ede70EMDTr8_30.000_40.000.mp4",
-        "question": "What genre is the music? What atmosphere does the music create?"
+        "question": "What genre is the music? What atmosphere does the music create?",
+        "audio_path": "audios/Valor_AVQA/Ede70EMDTr8_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1266_967cf998",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/5AtdNZxX0Z8_0.000_10.000.mp4",
-        "question": "In what ways does the background music influence the atmosphere or tone of the video?"
+        "question": "In what ways does the background music influence the atmosphere or tone of the video?",
+        "audio_path": "audios/Valor_AVQA/5AtdNZxX0Z8_0.000_10.000.mp3"
     },
     {
         "uniq_id": "1732173202_550_c03ac464",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/d1nz5tZckSA_280.000_290.000.mp4",
-        "question": "What emotions do you think the music is conveying, and how might it resonate with the audience?"
+        "question": "What emotions do you think the music is conveying, and how might it resonate with the audience?",
+        "audio_path": "audios/Valor_AVQA/d1nz5tZckSA_280.000_290.000.mp3"
     },
     {
         "uniq_id": "1732173202_1910_465eca7c",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/yJPB7UlC4No_90.000_100.000.mp4",
-        "question": "What is the connection between the human and the machine in the video?"
+        "question": "What is the connection between the human and the machine in the video?",
+        "audio_path": "audios/Valor_AVQA/yJPB7UlC4No_90.000_100.000.mp3"
     },
     {
         "uniq_id": "1732173202_1364_bf4674e6",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/KHp9nGctX7g_70.000_80.000.mp4",
-        "question": "How might the music affect the viewer's perception of the scene"
+        "question": "How might the music affect the viewer's perception of the scene",
+        "audio_path": "audios/Valor_AVQA/KHp9nGctX7g_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_3244_9c2f3a4f",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/jArXYgAYrEc_70.000_80.000.mp4",
-        "question": "Based on the video and sound, what do you think the man is about to do?"
+        "question": "Based on the video and sound, what do you think the man is about to do?",
+        "audio_path": "audios/Valor_AVQA/jArXYgAYrEc_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_689_9638e323",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/zDIisirj_fk_210.000_220.000.mp4",
-        "question": "How might the sounds associated with action, do you think its an easy action?"
+        "question": "How might the sounds associated with action, do you think its an easy action?",
+        "audio_path": "audios/Valor_AVQA/zDIisirj_fk_210.000_220.000.mp3"
     },
     {
         "uniq_id": "1732173202_653_544b135e",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/bwHPVG6vbNQ_20.000_30.000.mp4",
-        "question": "How do the music and lighting design enhance the atmosphere of the performance?"
+        "question": "How do the music and lighting design enhance the atmosphere of the performance?",
+        "audio_path": "audios/Valor_AVQA/bwHPVG6vbNQ_20.000_30.000.mp3"
     },
     {
         "uniq_id": "1732173202_2550_b2a091e6",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/63GTFc5Okms_70.000_80.000.mp4",
-        "question": "What kind of emotions does the audio convey, and how do the visual elements of characters interact with the audio narrative?"
+        "question": "What kind of emotions does the audio convey, and how do the visual elements of characters interact with the audio narrative?",
+        "audio_path": "audios/Valor_AVQA/63GTFc5Okms_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_504_e5c80fb6",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/vd1dgdxlA94_30.000_40.000.mp4",
-        "question": "Based on the audio, how might the piece he is playing reflect the atmosphere or theme of the event?"
+        "question": "Based on the audio, how might the piece he is playing reflect the atmosphere or theme of the event?",
+        "audio_path": "audios/Valor_AVQA/vd1dgdxlA94_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1711_0faa2b65",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/GNyXJQp6kME_30.000_40.000.mp4",
-        "question": "If you don't like animal, what would you feel?"
+        "question": "If you don't like animal, what would you feel?",
+        "audio_path": "audios/Valor_AVQA/GNyXJQp6kME_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_600_0a7d2842",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/blalAktxFoI_240.000_250.000.mp4",
-        "question": "What is the man doing? What did he say?"
+        "question": "What is the man doing? What did he say?",
+        "audio_path": "audios/Valor_AVQA/blalAktxFoI_240.000_250.000.mp3"
     },
     {
         "uniq_id": "1732173202_1358_25f8fdb2",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/YJdBwuIn4Ec_30.000_40.000.mp4",
-        "question": "What is the significance of the car stopping briefly, and how does this affect the overall impression of the scene? What is the difference between the audio before and after this time period?"
+        "question": "What is the significance of the car stopping briefly, and how does this affect the overall impression of the scene? What is the difference between the audio before and after this time period?",
+        "audio_path": "audios/Valor_AVQA/YJdBwuIn4Ec_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1179_161a7034",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/OIygEG3sPtU_310.000_320.000.mp4",
-        "question": "Based on the man's attire, actions, and the setting, why might he be here? What is he doing here?"
+        "question": "Based on the man's attire, actions, and the setting, why might he be here? What is he doing here?",
+        "audio_path": "audios/Valor_AVQA/OIygEG3sPtU_310.000_320.000.mp3"
     },
     {
         "uniq_id": "1732173202_474_cf138520",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/0SkccP8H-fQ_390.000_400.000.mp4",
-        "question": "How might the audio interact with the visual elements to evoke specific themes?"
+        "question": "How might the audio interact with the visual elements to evoke specific themes?",
+        "audio_path": "audios/Valor_AVQA/0SkccP8H-fQ_390.000_400.000.mp3"
     },
     {
         "uniq_id": "1732173202_567_8ac148df",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/4ztYgv_AzmY_70.000_80.000.mp4",
-        "question": "How might the sound and the gradual change of the camera position contribute to the viewer's perception of the natural environment depicted in the video?"
+        "question": "How might the sound and the gradual change of the camera position contribute to the viewer's perception of the natural environment depicted in the video?",
+        "audio_path": "audios/Valor_AVQA/4ztYgv_AzmY_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_786_30a4602b",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/VhMPUIDL2mk_30.000_40.000.mp4",
-        "question": "Explain what materials the man is using based on the audio, and what he might be demonstrating to the audience?"
+        "question": "Explain what materials the man is using based on the audio, and what he might be demonstrating to the audience?",
+        "audio_path": "audios/Valor_AVQA/VhMPUIDL2mk_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1240_9b158030",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/cKXa4FnAIvY_350.000_360.000.mp4",
-        "question": "What actions did the player take based on the video?How does the design of the game levels influence the player's strategy?"
+        "question": "What actions did the player take based on the video?How does the design of the game levels influence the player's strategy?",
+        "audio_path": "audios/Valor_AVQA/cKXa4FnAIvY_350.000_360.000.mp3"
     },
     {
         "uniq_id": "1732173202_2551_40fde218",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/dxTluhuhL3w_310.000_320.000.mp4",
-        "question": "What kind of atmosphere the video and audio create, and how do they affect the player's experience?"
+        "question": "What kind of atmosphere the video and audio create, and how do they affect the player's experience?",
+        "audio_path": "audios/Valor_AVQA/dxTluhuhL3w_310.000_320.000.mp3"
     },
     {
         "uniq_id": "1732173202_2290_d513ba0a",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ao5SohzVhpM_30.000_40.000.mp4",
-        "question": "How does the technique used by the man with the tool influence the final appearance of the car's paint job?What is used to ensure the paint applied evenly and the safety of the worker"
+        "question": "How does the technique used by the man with the tool influence the final appearance of the car's paint job?What is used to ensure the paint applied evenly and the safety of the worker",
+        "audio_path": "audios/Valor_AVQA/ao5SohzVhpM_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_573_48264491",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/0SEHGxAQL18_30.000_40.000.mp4",
-        "question": "Based on the audio and the scene in the video, what might be the relationship between the man's and the dog's action?"
+        "question": "Based on the audio and the scene in the video, what might be the relationship between the man's and the dog's action?",
+        "audio_path": "audios/Valor_AVQA/0SEHGxAQL18_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_1867_a9627ec7",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/ppSWMKKGZtM_70.000_80.000.mp4",
-        "question": "In what ways do the characters' costumes and expressions reflect their roles or personalities in the cartoon? What atmosphere does the background music set?"
+        "question": "In what ways do the characters' costumes and expressions reflect their roles or personalities in the cartoon? What atmosphere does the background music set?",
+        "audio_path": "audios/Valor_AVQA/ppSWMKKGZtM_70.000_80.000.mp3"
     },
     {
         "uniq_id": "1732173202_1753_0db7afb3",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/C1pyHakPaIE_30.000_40.000.mp4",
-        "question": "Do you think the song is great? Why"
+        "question": "Do you think the song is great? Why",
+        "audio_path": "audios/Valor_AVQA/C1pyHakPaIE_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_209_a83507eb",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/1j4rFfU5XKQ_30.000_40.000.mp4",
-        "question": "What's atmosphere among the players?"
+        "question": "What's atmosphere among the players?",
+        "audio_path": "audios/Valor_AVQA/1j4rFfU5XKQ_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_2450_64b622dd",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/erJ_Dnt-Waw_18.000_28.000.mp4",
-        "question": "What is the event doing, and what function might the resulting object serve?"
+        "question": "What is the event doing, and what function might the resulting object serve?",
+        "audio_path": "audios/Valor_AVQA/erJ_Dnt-Waw_18.000_28.000.mp3"
     },
     {
         "uniq_id": "1732173202_540_95d0fdd9",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/Y9uOpwHbl_s_280.000_290.000.mp4",
-        "question": "What emotions might the woman be experiencing, what's the sound like?"
+        "question": "What emotions might the woman be experiencing, what's the sound like?",
+        "audio_path": "audios/Valor_AVQA/Y9uOpwHbl_s_280.000_290.000.mp3"
     },
     {
         "uniq_id": "1732173202_1141_33f8afa8",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/PBQ4OAC215M_110.000_120.000.mp4",
-        "question": "What might the man be explaining, and how could his explanation relate to its features or potential uses?"
+        "question": "What might the man be explaining, and how could his explanation relate to its features or potential uses?",
+        "audio_path": "audios/Valor_AVQA/PBQ4OAC215M_110.000_120.000.mp3"
     },
     {
         "uniq_id": "1732173202_1068_01643d80",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/O_3h32Hetwc_130.000_140.000.mp4",
-        "question": "What was the reason for the sudden cheers from the audience in the video? What effect does the music have on the atmosphere of the scene?"
+        "question": "What was the reason for the sudden cheers from the audience in the video? What effect does the music have on the atmosphere of the scene?",
+        "audio_path": "audios/Valor_AVQA/O_3h32Hetwc_130.000_140.000.mp3"
     },
     {
         "uniq_id": "1732173202_561_c5ece3c0",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/C8ObS1VYVI4_30.000_40.000.mp4",
-        "question": "How do the cacophony of voices and the glow of chainsaws suggest how difficult a man's job is when cutting metal?"
+        "question": "How do the cacophony of voices and the glow of chainsaws suggest how difficult a man's job is when cutting metal?",
+        "audio_path": "audios/Valor_AVQA/C8ObS1VYVI4_30.000_40.000.mp3"
     },
     {
         "uniq_id": "1732173202_480_afc6cc91",
         "task_name": "AudioVideo2Text",
         "video_path": "videos/Valor_AVQA/TGrBFqptVDg_150.000_160.000.mp4",
-        "question": "What might be the significance of the man's action, and how does this action reflect on his values or intentions?"
+        "question": "What might be the significance of the man's action, and how does this action reflect on his values or intentions?",
+        "audio_path": "audios/Valor_AVQA/TGrBFqptVDg_150.000_160.000.mp3"
     },
     {
         "uniq_id": "3f48b0e5",
