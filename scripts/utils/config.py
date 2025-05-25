@@ -10,10 +10,10 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 
 # Step 2: use ROOT_DIR to build all other paths
 BASE_DIR = ROOT_DIR / "dataset" / "X2XRawBenchmark"
-BENCHMARK_FILE = BASE_DIR / "X2XBenchmark.json"
+BENCHMARK_FILE = BASE_DIR / "TaskAnything.json"
 
 RESULT_DIR = ROOT_DIR / "dataset" / "ResponseCollection"
-RESULT_FILE = RESULT_DIR / "X2XBenchmarkResponse.json"
+RESULT_FILE = RESULT_DIR / "JudgeAnything.json"
 
 CHECKLIST_DIR = ROOT_DIR / "dataset" / "Checklist"
 CHECKLIST_FILE = CHECKLIST_DIR / "checklist.json"
