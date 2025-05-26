@@ -1,5 +1,5 @@
 import os
-from utils.api import *
+from scripts.utils.Gemini2.api import *
 from utils.utils import *
 from utils.config import *
 from google import genai

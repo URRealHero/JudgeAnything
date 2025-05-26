@@ -26,7 +26,8 @@ class ImageProcessor(BaseProcessor):
         return processed
 
 class VideoProcessor(BaseProcessor):
-    def __init__(self, target_fps=1):
+    def __init__(self, target_fps=1, max_frames=256):
+        self.max_frames = max_frames
         self.target_fps = target_fps
 
     def process(self, video_files):
@@ -47,17 +48,25 @@ class VideoProcessor(BaseProcessor):
             original_fps = 30
 
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        desired_count = min(int(total_frames * self.target_fps / original_fps), total_frames)
-        desired_count = max(desired_count, 1)
+        duration_sec = total_frames / original_fps
+        num_target_frames = int(duration_sec * self.target_fps)
+        num_target_frames = max(num_target_frames, 1)
 
+        timestamps = np.linspace(0, duration_sec, num_target_frames, endpoint=False)
         frames = []
-        for _ in range(desired_count):
-            pos = _ * 1000 * (1/self.target_fps)
-            cap.set(cv2.CAP_PROP_POS_MSEC, pos)
+
+        for t in timestamps:
+            cap.set(cv2.CAP_PROP_POS_MSEC, t * 1000)
             ret, frame = cap.read()
             if ret:
                 frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 frames.append(Image.fromarray(frame_rgb))
 
         cap.release()
+
+        # Uniformly sample if more than max_frames
+        if len(frames) > self.max_frames:
+            indices = np.linspace(0, len(frames) - 1, self.max_frames, dtype=int)
+            frames = [frames[i] for i in indices]
+
         return frames

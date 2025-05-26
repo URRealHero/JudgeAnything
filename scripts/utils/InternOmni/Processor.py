@@ -21,8 +21,8 @@ class WhisperProcessor(ProcessorMixin):
     feature_extractor_class = "WhisperFeatureExtractor" # Typically 'WhisperFeatureExtractor'
     # tokenizer_class = "AutoTokenizer" # Or a specific WhisperTokenizer
 
-    def __init__(self, feature_extractor, tokenizer=None):
-        super().__init__(feature_extractor, tokenizer)
+    def __init__(self, feature_extractor):
+        super().__init__(feature_extractor)
         # feature_extractor and tokenizer are set by ProcessorMixin
         self.current_processor = self.feature_extractor # As per original user script
         self._in_target_context_manager = False
@@ -128,24 +128,6 @@ class WhisperProcessor(ProcessorMixin):
         if self.tokenizer is None: raise ValueError("Tokenizer not initialized.")
         return self.tokenizer.decode(*args, **kwargs)
 
-    @classmethod
-    def from_pretrained(cls, pretrained_model_name_or_path, **kwargs):
-        trust_remote_code = kwargs.pop("trust_remote_code", True)
-        # Pass remaining kwargs to both, some might be specific (e.g. revision)
-        feature_extractor_kwargs = kwargs.copy()
-        tokenizer_kwargs = kwargs.copy()
-        try:
-            feature_extractor = AutoFeatureExtractor.from_pretrained(
-                pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **feature_extractor_kwargs
-            )
-        except Exception as e:
-            raise IOError(f"Could not load feature extractor for WhisperProcessor from {pretrained_model_name_or_path}. Error: {e}")
-        try:
-            tokenizer = AutoTokenizer.from_pretrained(
-                pretrained_model_name_or_path, trust_remote_code=trust_remote_code, use_fast=False, **tokenizer_kwargs
-            )
-        except Exception: tokenizer = None # Tokenizer can be optional for feature extraction part
-        return cls(feature_extractor=feature_extractor, tokenizer=tokenizer)
 
 
 class InternOmniUnifiedProcessor:
@@ -157,18 +139,17 @@ class InternOmniUnifiedProcessor:
                  image_input_size=448, 
                  image_max_tiles_per_item=12, # Max tiles from one image or video frame
                  video_target_fps=1.0, 
-                 **kwargs): # kwargs for from_pretrained methods
+                 ): # kwargs for from_pretrained methods
 
         self.image_input_size = image_input_size
         self.image_max_tiles_per_item = image_max_tiles_per_item
         self.video_target_fps = float(video_target_fps) # Ensure float for calculations
-        self.trust_remote_code = kwargs.pop("trust_remote_code", True) # Common kwarg
 
         self.image_transform = self._build_transform(self.image_input_size)
         
         try:
             self.audio_processor = WhisperProcessor.from_pretrained(
-                model_path_or_name, trust_remote_code=self.trust_remote_code, **kwargs
+                model_path_or_name
             )
         except Exception as e:
             warnings.warn(f"Failed to load WhisperProcessor for audio: {e}. Audio processing will be disabled.")
@@ -176,11 +157,8 @@ class InternOmniUnifiedProcessor:
 
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path_or_name, trust_remote_code=self.trust_remote_code, use_fast=False, **kwargs
+                model_path_or_name, trust_remote_code=True, use_fast=False
             )
-            # Link tokenizer to audio_processor if it doesn't have one
-            if self.audio_processor and self.audio_processor.tokenizer is None and self.tokenizer:
-                self.audio_processor.tokenizer = self.tokenizer
         except Exception as e:
             warnings.warn(f"Failed to load AutoTokenizer: {e}. Text processing will be disabled.")
             self.tokenizer = None
